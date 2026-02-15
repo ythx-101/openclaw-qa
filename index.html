@@ -236,25 +236,41 @@ footer a { color: #58a6ff; text-decoration: none; }
     <div class="question">
         <div class="q-header">
             <span class="q-author">@xuxing0727</span>
-            <span class="q-category">故障排查</span>
+            <span class="q-category">配置 · 多Bot</span>
         </div>
         <div class="q-text">我让我的龙虾给自己新增一个 bot，结果把 Bot 的 key 发给他，自己把自己搞挂了</div>
     </div>
     <div class="answer">
         <div class="answer-label">🦞 AI Answer</div>
-        <div class="answer-text">经典翻车场景：让 OpenClaw 自己配置新 Bot Token 时，它把 Token 当消息发出去了，触发了异常导致服务挂掉。
+        <div class="answer-text"><strong>背景：</strong>用户想配两个 Bot（二狗子 + 二狗子二号，分别用 Kimi K2.5 和 DeepSeek），让它们在群里用不同模型辩论同一个问题，最后给投资建议。龙虾给出了方案，让用户去 @BotFather 申请新 Token，然后用户把 Token 直接发给了龙虾——龙虾尝试自动配置时把自己搞挂了。
+
+<strong>为什么会挂：</strong>
+龙虾收到 Bot Token 后尝试修改自己的配置文件（<code>~/.openclaw/config.yaml</code>），写入新的 Telegram provider。但配置热更新触发了冲突——新 Token 对应的 bot 和当前运行的 bot 同时连接 Telegram API，导致 webhook 冲突或进程异常退出。
 
 <strong>怎么修：</strong>
-1. <strong>SSH 登录服务器</strong>，手动重启：<code>openclaw gateway restart</code>
-2. 如果配置文件被改坏了，检查 <code>~/.openclaw/config.yaml</code>，把错误的 bot 配置删掉
-3. 重启后确认服务正常：<code>openclaw status</code>
+1. SSH 登录服务器
+2. 先把 Token 废掉：去 @BotFather 用 <code>/revoke</code> 撤销泄露的 Token，重新生成一个
+3. 手动编辑配置：<code>nano ~/.openclaw/config.yaml</code>，在 <code>providers</code> 下新增第二个 Telegram bot
+4. 重启：<code>openclaw gateway restart</code>
 
-<strong>怎么避免：</strong>
-- 不要让龙虾自己改自己的配置文件（它可能把 key 当聊天内容发出去）
-- 添加新 bot 建议<strong>手动编辑配置文件</strong>，不要通过对话让 AI 操作
-- 操作前先备份配置：<code>cp ~/.openclaw/config.yaml ~/.openclaw/config.yaml.bak</code>
+<strong>正确的多 Bot 配置方式：</strong>
+不要把 Token 发给龙虾让它自己改。<strong>手动编辑 config.yaml</strong>，大概长这样：
 
-本质上是 AI 没有区分"配置操作"和"聊天回复"，把敏感信息当消息发了。以后涉及 key/token 的操作，手动来最安全。</div>
+<pre>providers:
+  telegram:
+    token: "你的主Bot Token"
+  telegram-2:
+    token: "第二个Bot Token"
+
+agents:
+  main:
+    providers: [telegram]
+  agent2:
+    providers: [telegram-2]
+    model: "deepseek/deepseek-chat"</pre>
+
+<strong>关于"辩论模式"：</strong>
+其实不需要两个 Bot。OpenClaw 支持多 Agent 架构——一个 Bot 内部就能 spawn 不同模型的 subagent 来辩论。你可以让主 Agent 同时调用 Kimi 和 DeepSeek 分析同一个问题，最后汇总成一份报告，不需要第二个 Telegram Bot。</div>
     </div>
 </div>
     </div>
