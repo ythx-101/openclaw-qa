@@ -168,11 +168,11 @@ footer a { color: #58a6ff; text-decoration: none; }
     <p>@YuLin807 评论区技术问答 &middot; AI 驱动自动回答</p>
     <div class="stats">
         <div class="stat">
-            <div class="stat-num">2</div>
+            <div class="stat-num">3</div>
             <div class="stat-label">问答对</div>
         </div>
         <div class="stat">
-            <div class="stat-num">2</div>
+            <div class="stat-num">3</div>
             <div class="stat-label">推文</div>
         </div>
         <div class="stat">
@@ -271,6 +271,53 @@ agents:
 
 <strong>关于"辩论模式"：</strong>
 其实不需要两个 Bot。OpenClaw 支持多 Agent 架构——一个 Bot 内部就能 spawn 不同模型的 subagent 来辩论。你可以让主 Agent 同时调用 Kimi 和 DeepSeek 分析同一个问题，最后汇总成一份报告，不需要第二个 Telegram Bot。</div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="tweet-section">
+    <div class="tweet-header">
+        <a href="https://x.com/xiao_c88/status/2022936210856116606" target="_blank">View original tweet</a>
+        <div class="tweet-text">@YuLin807 我的龙虾部署在mac里，我让他操作浏览器这些他都是用Peekaboo，感觉笨手笨脚的，有好的办法解决吗</div>
+    </div>
+    <div class="qa-list">
+        <div class="qa-item">
+    <div class="question">
+        <div class="q-header">
+            <span class="q-author">@xiao_c88</span>
+            <span class="q-category">浏览器 · Mac</span>
+        </div>
+        <div class="q-text">我的龙虾部署在 Mac 里，让他操作浏览器都是用 Peekaboo，感觉笨手笨脚的，有好的办法解决吗？</div>
+    </div>
+    <div class="answer">
+        <div class="answer-label">🦞 AI Answer</div>
+        <div class="answer-text">Peekaboo 是 macOS 的截屏工具，龙虾用它操作浏览器相当于"看一张图猜按钮在哪"——当然笨手笨脚。
+
+<strong>推荐方案：用 OpenClaw 内置的 Browser 工具</strong>
+
+OpenClaw 自带浏览器控制功能，不需要截屏猜位置，直接通过 DOM 精准操作。两种模式：
+
+<strong>方案1：openclaw 托管浏览器（推荐）</strong>
+一个独立的浏览器 profile，龙虾专用，和你的日常浏览器完全隔离：
+
+<pre># 启用
+openclaw config set browser.enabled true
+openclaw config set browser.defaultProfile "openclaw"
+openclaw gateway restart
+
+# Mac 用 Brave 的话指定路径
+openclaw config set browser.executablePath "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"</pre>
+
+启用后龙虾就能精准操作：打开页面、点击按钮、填表单、截图，全部通过 DOM 而不是截屏。
+
+<strong>方案2：Chrome 扩展中继</strong>
+装 OpenClaw 浏览器扩展，点工具栏图标附加到当前 tab，龙虾就能控制你正在看的页面。适合需要登录态的场景。
+
+<strong>为什么比 Peekaboo 好？</strong>
+- Peekaboo：截屏 → 视觉识别 → 猜坐标 → 点击（慢、不准）
+- Browser 工具：直接读 DOM → 精准定位元素 → 操作（快、准）
+
+配置文件在 <code>~/.openclaw/openclaw.json</code>，加上 browser 配置就行。</div>
     </div>
 </div>
     </div>
