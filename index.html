@@ -168,11 +168,11 @@ footer a { color: #58a6ff; text-decoration: none; }
     <p>@YuLin807 评论区技术问答 &middot; AI 驱动自动回答</p>
     <div class="stats">
         <div class="stat">
-            <div class="stat-num">3</div>
+            <div class="stat-num">4</div>
             <div class="stat-label">问答对</div>
         </div>
         <div class="stat">
-            <div class="stat-num">3</div>
+            <div class="stat-num">4</div>
             <div class="stat-label">推文</div>
         </div>
         <div class="stat">
@@ -318,6 +318,80 @@ openclaw config set browser.executablePath "/Applications/Brave Browser.app/Cont
 - Browser 工具：直接读 DOM → 精准定位元素 → 操作（快、准）
 
 配置文件在 <code>~/.openclaw/openclaw.json</code>，加上 browser 配置就行。</div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="tweet-section">
+    <div class="tweet-header">
+        <a href="https://x.com/tmkm_km/status/2022968263278522590" target="_blank">View original tweet</a>
+        <div class="tweet-text">@YuLin807 做了3個小🦞Agent，也準備好了workspace，但 openclaw channels add 只能連 Main agent。寫了4個 Telegram token 進 openclaw.json，結果4個都是 Main agent 在回。</div>
+    </div>
+    <div class="qa-list">
+        <div class="qa-item">
+    <div class="question">
+        <div class="q-header">
+            <span class="q-author">@tmkm_km</span>
+            <span class="q-category">多Agent · 配置</span>
+        </div>
+        <div class="q-text">做了3個 Agent 也準備好 workspace，怎麼讓每個 Agent 各自連到自己的 Telegram bot？改 openclaw.json 一直語法錯誤，4個 bot 都是 Main agent 在回。</div>
+    </div>
+    <div class="answer">
+        <div class="answer-label">🦞 AI Answer</div>
+        <div class="answer-text"><strong>核心問題：</strong>OpenClaw 目前的 <code>channels.telegram</code> 只支持一個 bot token，所以不管你寫幾個 token 進去，所有消息都會路由到 main agent。
+
+<strong>正確做法：用 agents 配置 + channel 路由</strong>
+
+在 <code>~/.openclaw/openclaw.json</code> 裡，你需要做兩件事：
+
+<strong>1. 配置多個 Telegram channel（每個 bot 一個）</strong>
+
+<pre>{
+  "channels": {
+    "telegram": {
+      "botToken": "主Bot的Token",
+      "allowFrom": ["你的TelegramID"]
+    },
+    "telegram-agent2": {
+      "provider": "telegram",
+      "botToken": "第二個Bot的Token",
+      "allowFrom": ["你的TelegramID"]
+    },
+    "telegram-agent3": {
+      "provider": "telegram",
+      "botToken": "第三個Bot的Token",
+      "allowFrom": ["你的TelegramID"]
+    }
+  }
+}</pre>
+
+<strong>2. 在 agents 裡綁定 channel 到 agent</strong>
+
+<pre>{
+  "agents": {
+    "defaults": {
+      "workspace": "~/.openclaw/workspace"
+    },
+    "agent2": {
+      "workspace": "~/.openclaw/workspace-agent2",
+      "channels": ["telegram-agent2"],
+      "model": "你想用的模型"
+    },
+    "agent3": {
+      "workspace": "~/.openclaw/workspace-agent3",
+      "channels": ["telegram-agent3"],
+      "model": "你想用的模型"
+    }
+  }
+}</pre>
+
+<strong>關鍵點：</strong>
+- 每個額外的 Telegram bot 需要用不同的 channel 名（如 <code>telegram-agent2</code>），加上 <code>"provider": "telegram"</code>
+- 用 <code>"channels"</code> 字段把 agent 綁到對應的 channel
+- <code>openclaw channels add</code> 只能加 main 的，其他 agent 必須手動改 JSON
+- JSON 語法錯誤常見原因：多了逗號、少了引號。建議用 <code>openclaw doctor</code> 檢查配置
+
+<strong>改完後：</strong><code>openclaw gateway restart</code> 重啟即可。</div>
     </div>
 </div>
     </div>
