@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-02-15T03:37:09.378168",
-  "total_tweets": 1,
-  "total_qa": 1,
+  "generated_at": "2026-02-16T00:15:00.000000",
+  "total_tweets": 2,
+  "total_qa": 2,
   "tweets": [
     {
       "tweet_url": "https://x.com/YuLin807/status/2022683836799435254",
@@ -24,6 +24,28 @@
         }
       ],
       "generated_at": "2026-02-15T03:37:09.377589"
+    },
+    {
+      "tweet_url": "https://x.com/kevinma_dev_zh/status/2023060865667518907",
+      "tweet_text": "让 OpenClaw 增加了画图能力, 画完直接通过聊天窗口发给我图片，再同时给我一个可访问的 URL。虽然跑通了，但是通过 curl 调用 Gemini API 实现的。我让它给 gemini cli 安装了 nanobana 插件, 配置了 api key, 但调用被拒绝 \"Tool execution denied by policy\".",
+      "tweet_author": "kevinma_dev_zh",
+      "total_replies": 0,
+      "qa_count": 1,
+      "qa_pairs": [
+        {
+          "question": {
+            "author": "@kevinma_dev_zh",
+            "author_name": "Kevin Ma",
+            "text": "给 Gemini CLI 安装了 nanobanana 插件，配置了 API key，但调用被拒绝 \"Tool execution denied by policy\"，怎么解决？",
+            "category": "工具策略",
+            "summary": "Gemini CLI 的 nanobanana 画图插件被 OpenClaw 工具策略阻止",
+            "likes": 1,
+            "views": 310
+          },
+          "answer": "这个错误来自 OpenClaw 的安全层（Tool Policy），不是 nanobanana 插件本身的问题。\n\nOpenClaw 有三层安全控制：\n1. **沙箱（Sandbox）**— 决定工具在哪里运行（Docker vs 主机）\n2. **工具策略（Tool Policy）**— 决定哪些工具可用\n3. **提权（Elevated）**— exec 的逃逸通道\n\n**排查步骤：**\n\n```bash\n# 先看当前策略到底怎么配的\nopenclaw sandbox explain\n```\n\n**解决方案：** 在 `openclaw.json` 中确保 exec 工具被允许：\n\n```json5\n{\n  tools: {\n    allow: [\"group:runtime\", \"group:fs\"]\n    // group:runtime 包含 exec、bash、process\n  }\n}\n```\n\n如果 Agent 跑在沙箱里，还需要给沙箱也开放：\n\n```json5\n{\n  tools: {\n    sandbox: {\n      tools: {\n        allow: [\"group:runtime\", \"group:fs\"]\n      }\n    }\n  }\n}\n```\n\n修改后重启 Gateway 生效。\n\n**原理：** nanobanana 作为 Gemini CLI 插件，执行时需要 OpenClaw 的 exec 权限来调用 shell 命令。默认配置下 exec 可能被 deny 列表阻止或不在 allow 列表中。`group:runtime` 会展开为 exec + bash + process 三个工具的权限。"
+        }
+      ],
+      "generated_at": "2026-02-16T00:15:00.000000"
     }
   ]
 }
