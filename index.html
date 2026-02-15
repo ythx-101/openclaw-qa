@@ -168,15 +168,15 @@ footer a { color: #58a6ff; text-decoration: none; }
     <p>@YuLin807 评论区技术问答 &middot; AI 驱动自动回答</p>
     <div class="stats">
         <div class="stat">
-            <div class="stat-num">4</div>
+            <div class="stat-num">5</div>
             <div class="stat-label">问答对</div>
         </div>
         <div class="stat">
-            <div class="stat-num">4</div>
+            <div class="stat-num">5</div>
             <div class="stat-label">推文</div>
         </div>
         <div class="stat">
-            <div class="stat-num">02/15</div>
+            <div class="stat-num">02/16</div>
             <div class="stat-label">更新</div>
         </div>
     </div>
@@ -392,6 +392,63 @@ openclaw config set browser.executablePath "/Applications/Brave Browser.app/Cont
 - JSON 語法錯誤常見原因：多了逗號、少了引號。建議用 <code>openclaw doctor</code> 檢查配置
 
 <strong>改完後：</strong><code>openclaw gateway restart</code> 重啟即可。</div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="tweet-section">
+    <div class="tweet-header">
+        <a href="https://x.com/kevinma_dev_zh/status/2023060865667518907" target="_blank">View original tweet</a>
+        <div class="tweet-text">让 OpenClaw 增加了画图能力, 画完直接通过聊天窗口发给我图片。虽然跑通了，但是通过 curl 调用 Gemini API 实现的。我让它给 gemini cli 安装了 nanobana 插件, 配置了 api key, 但调用被拒绝 "Tool execution denied by policy".</div>
+    </div>
+    <div class="qa-list">
+        <div class="qa-item">
+    <div class="question">
+        <div class="q-header">
+            <span class="q-author">Kevin Ma</span>
+            <span class="q-category">工具策略</span>
+            <span class="q-stats">1 likes &middot; 310 views</span>
+        </div>
+        <div class="q-text">给 Gemini CLI 安装了 nanobanana 插件，配置了 API key，但调用被拒绝 "Tool execution denied by policy"，怎么解决？</div>
+    </div>
+    <div class="answer">
+        <div class="answer-label">🦞 AI Answer</div>
+        <div class="answer-text">这个错误来自 OpenClaw 的安全层（Tool Policy），不是 nanobanana 插件本身的问题。
+
+OpenClaw 有三层安全控制：
+1. <strong>沙箱（Sandbox）</strong>— 决定工具在哪里运行（Docker vs 主机）
+2. <strong>工具策略（Tool Policy）</strong>— 决定哪些工具可用
+3. <strong>提权（Elevated）</strong>— exec 的逃逸通道
+
+<strong>排查步骤：</strong>
+
+<pre>## 先看当前策略到底怎么配的
+openclaw sandbox explain</pre>
+
+<strong>解决方案：</strong>在 <code>openclaw.json</code> 中确保 exec 工具被允许：
+
+<pre>{
+  "tools": {
+    "allow": ["group:runtime", "group:fs"]
+    // group:runtime 包含 exec、bash、process
+  }
+}</pre>
+
+如果 Agent 跑在沙箱里，还需要给沙箱也开放：
+
+<pre>{
+  "tools": {
+    "sandbox": {
+      "tools": {
+        "allow": ["group:runtime", "group:fs"]
+      }
+    }
+  }
+}</pre>
+
+修改后 <code>openclaw gateway restart</code> 重启生效。
+
+<strong>原理：</strong>nanobanana 作为 Gemini CLI 插件，执行时需要 OpenClaw 的 exec 权限来调用 shell 命令。默认配置下 exec 可能被 deny 列表阻止或不在 allow 列表中。<code>group:runtime</code> 会展开为 exec + bash + process 三个工具的权限。</div>
     </div>
 </div>
     </div>
