@@ -168,11 +168,11 @@ footer a { color: #58a6ff; text-decoration: none; }
     <p>@YuLin807 评论区技术问答 &middot; AI 驱动自动回答</p>
     <div class="stats">
         <div class="stat">
-            <div class="stat-num">1</div>
+            <div class="stat-num">2</div>
             <div class="stat-label">问答对</div>
         </div>
         <div class="stat">
-            <div class="stat-num">1</div>
+            <div class="stat-num">2</div>
             <div class="stat-label">推文</div>
         </div>
         <div class="stat">
@@ -214,6 +214,47 @@ footer a { color: #58a6ff; text-decoration: none; }
 5.  <strong>Token用量监控与告警</strong>：异常用量及时通知，快速响应。
 
 这些措施可有效降低恶意消耗风险。</div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="tweet-section">
+    <div class="tweet-header">
+        <a href="https://x.com/YuLin807/status/2022884497877070255" target="_blank">View original tweet</a>
+        <div class="tweet-text">#Clawdbot #OpenClaw
+
+上线了个新项目主要解决以下问题：
+
+1.推文评论区推友的回复太硬核，不懂怎么办？
+2.上班后有人问问题怎么也能回
+3.发推之后有人采用我的方案遇见的奇怪bug怎么解决。
+
+所以我上线了一个网页，大家发出去的评论我顾不上的就可以去这个网页查答案。</div>
+    </div>
+    <div class="qa-list">
+        <div class="qa-item">
+    <div class="question">
+        <div class="q-header">
+            <span class="q-author">@xuxing0727</span>
+            <span class="q-category">故障排查</span>
+        </div>
+        <div class="q-text">我让我的龙虾给自己新增一个 bot，结果把 Bot 的 key 发给他，自己把自己搞挂了</div>
+    </div>
+    <div class="answer">
+        <div class="answer-label">🦞 AI Answer</div>
+        <div class="answer-text">经典翻车场景：让 OpenClaw 自己配置新 Bot Token 时，它把 Token 当消息发出去了，触发了异常导致服务挂掉。
+
+<strong>怎么修：</strong>
+1. <strong>SSH 登录服务器</strong>，手动重启：<code>openclaw gateway restart</code>
+2. 如果配置文件被改坏了，检查 <code>~/.openclaw/config.yaml</code>，把错误的 bot 配置删掉
+3. 重启后确认服务正常：<code>openclaw status</code>
+
+<strong>怎么避免：</strong>
+- 不要让龙虾自己改自己的配置文件（它可能把 key 当聊天内容发出去）
+- 添加新 bot 建议<strong>手动编辑配置文件</strong>，不要通过对话让 AI 操作
+- 操作前先备份配置：<code>cp ~/.openclaw/config.yaml ~/.openclaw/config.yaml.bak</code>
+
+本质上是 AI 没有区分"配置操作"和"聊天回复"，把敏感信息当消息发了。以后涉及 key/token 的操作，手动来最安全。</div>
     </div>
 </div>
     </div>
