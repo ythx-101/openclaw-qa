@@ -1,0 +1,93 @@
+{
+  "items": [
+    {
+      "tweet_url": "https://x.com/YuLin807/status/2022884497877070255",
+      "author": "@xuxing0727",
+      "author_name": "爱天地雨",
+      "text": "我让我的龙虾给自己新增一个 bot，结果把 Bot 的 key 发给他，自己把自己搞挂了",
+      "media": [
+        "https://pbs.twimg.com/media/HBLWtCKakAA_Ewi.jpg",
+        "https://pbs.twimg.com/media/HBLWtAObEAAYSiN.jpg",
+        "https://pbs.twimg.com/media/HBLWtAGakAAC4E6.jpg"
+      ],
+      "media_descriptions": [
+        "Okay, let's break down the image content.\n\n**Overall Context:**\n\nThe screenshot appears to be from a Telegram chat with a bot named \"二狗子\" (Er Gouzi, which translates to \"Dog Two\" or \"Second Dog\"). The user is configuring the bot to use two different AI models for analyzing and discussing a topic, ultimately providing investment advice.  It looks like the bot is designed to use two separate agents, each powered by a different large language model.\n\n**Text Content:**\n\n*   **Timestamp:** 13:22\n*   **Sender:** 二狗子 机器人 (Er Gouzi Robot)\n*   **Initial User Request:** \"我希望两个 bot 可以用不同的大模型,针对某一件事进行讨论,最终给我一个投资建议\" (I want two bots to use different large models to discuss a certain matter and ultimately give me an investment advice.)\n*   **Bot's Response:** \"👍 懂了! 你想让两个 Agent 用不同模型分析同一个问题,然后互相讨论,看哪个观点更靠谱。\" (👍 Got it! You want two Agents to analyze the same question using different models, then discuss and see which perspective is more reliable.)\n*   **Requirement Confirmation:** \"需要先确认: 你有第二个 Telegram Bot Token 吗? (需要你去@BotFather 申请一个新机器人)\" (Need to confirm: Do you have a second Telegram Bot Token? (You need to go to @BotFather to apply for a new bot))\n*   **Conditional Configuration:** \"如果有,我现在就帮你配置:\" (If you have one, I will configure it for you now:)\n*   **Configuration Table:**\n    *   **Columns:**\n        *   配置项 (Configuration Item) (gouzi2): Seems like an internal identifier.\n        *   二狗子(main) (Er Gouzi (main)): The main bot.\n        *   二狗子二号 (Er Gouzi No. 2): The second bot.\n    *   **Rows:**\n        *   Bot 机器人 (Bot Robot) | 现在的 (Current) | 新的 @BotFather (New @BotFather): indicating a change from the bot's initial setup at BotFather\n        *   模型 (Model) | Kimi K2.5 | DeepSeek Chat: Model assigned to each agent.\n        *   性格 (Personality) | 直接、少说废话、有判断力 (Direct, Less Nonsense, Judgemental) | 活泼、爱分析、喜欢给多种方案 (Lively, Loves Analysis, Likes to give multiple options)\n        *   SOUL.md | \"你凌晨两点也愿意聊的 AI\" (\"AI that is willing to chat with you at 2 am\") | \"善于多角度分析的投资顾问\" (\"Investment advisor that is good at multi-angle analysis\")\n        *   USER.md | 许老板 (Boss Xu) | 也可以是许老板 (或... 者写\"许老板的另一个视角\") (Can also be Boss Xu (or... Write \"Boss Xu's another perspective\"))\n*   **\"复制代码\" Button:** (Copy Code) Likely copies some configuration settings.\n*   **配置完的效果 (Effects After Configuration):**\n    *   拉进同一个群 (Pull into the same group)\n    *   你抛个问题: \"怎么看现在金价?\" (You throw a question: \"What do you think of the current gold price?\")\n    *   二狗子(Kimi): 直接给结论, \"跌 2%, 加仓\" (Er Gouzi (Kimi): Directly gives a conclusion, \"Down 2%, add to position\")\n    *   二狗子二号(DeepSeek):给出三个方案\"保 (Er Gouzi No. 2 (DeepSeek): Gives three options \"Hold\n\n*   **Menu:** \"三菜单\" (Menu)\n*   **Message Input:** \"输入消息\" (Enter message)\n\n**Potential Errors/Warnings/Considerations:**\n\n*   **Telegram Bot Token Requirement:** The bot explicitly asks for a second Telegram Bot Token. This means the user needs to create a second bot using BotFather and obtain its token.  Without this, the second agent will not function.\n*   **SOUL.md and USER.md:** These likely refer to files or configurations that define the specific personality or \"role\" for each bot. The bot seems to be trying to customize these based on user preference, possibly involving different prompts or data sources.\n*   **Hallucination/Inaccuracies by LLMs:** The sample interaction \"怎么看现在金价?\" shows the different approaches of the two bots. The user should be wary of relying solely on these bots for investment advice, as even the most advanced LLMs can make mistakes or provide biased information.\n*   **Language Understanding:** The bot needs to be able to understand and respond appropriately to a variety of investment-related queries. The effectiveness will depend on the training data and the capabilities of the underlying language models (Kimi K2.5 and DeepSeek Chat).\n\n**In summary,** the image shows a Telegram bot setup for investment analysis, using two different AI models as agents. The user is in the process of configuring these agents, and the bot is explaining the necessary steps and demonstrating potential outcomes.\n",
+        "The screenshot shows a Telegram conversation with a bot named \"二狗子\" (Er Gouzi, roughly translated as \"Dog Two\"). The conversation is about setting up an \"Investment Committee Mode.\" Here's a breakdown of the content:\n\n**Overall Theme:** Setting up a bot configuration for an \"Investment Committee Mode\" where two bots (Kimi and DeepSeek) provide opposing viewpoints and generate a combined investment advice.\n\n**Title/Sender:**\n\n*   **Top left:** 13:22 M (time)\n*   **Top center:**  二狗子 (Er Gouzi), 机器人 (Robot/Bot)\n\n**Content:**\n\n*   👍 **\"明白!你想要的是投资委员会模式:\"** (Understood! You want the Investment Committee Mode:)\n*   **\"你提问 → Kimi 观点 vs DeepSeek 观点 → 互相辩论 → 综合建议\"** (You ask a question -> Kimi's viewpoint vs DeepSeek's viewpoint -> Mutual debate -> Comprehensive advice)\n*   **\"实现方案:\"** (Implementation Plan:)\n\n    *   **\"方案 1: 群聊互动式\"** (Plan 1: Group Chat Interactive Mode)\n        *   \"两个 Bot 都在群里\" (Two Bots are in the group chat)\n        *   \"你 @二狗子 问:'金价怎么看?'\" (You @Er Gouzi and ask: \"What do you think of the gold price?\")\n        *   \"二狗子 (Kimi) 先答:'看空，建议观望'\" (Er Gouzi (Kimi) answers first: \"Bearish, suggests to wait and see.\")\n        *   \"二狗子二号 (DeepSeek) 看到回复，追加:'但我看多，理由是...'\" (Er Gouzi No. 2 (DeepSeek) sees the reply and adds: \"But I'm bullish, the reason is...\")\n        *   \"最后它们达成一致或给出各自结论\" (Finally, they reach a consensus or give their own conclusions)\n    *   **\"方案 2: 汇总报告式 (更简单)\"** (Plan 2: Summary Report Mode (Simpler))\n        *   \"你 @二狗子 问问题\" (You @Er Gouzi ask a question)\n        *   \"二狗子同时 spawn 二狗子二号 (不同模型) 分析同一问题\" (Er Gouzi simultaneously spawns Er Gouzi No. 2 (different model) to analyze the same question)\n        *   \"等待两者都完成后，汇总成一份报告:'Kimi 认为... DeepSeek 认为... 综合建议...'\" (After both are done, summarize into a report: \"Kimi thinks... DeepSeek thinks... Comprehensive advice...\")\n*   **\"关键问题: 你有第二个 Telegram Bot Token 吗?\"** (Key question: Do you have a second Telegram Bot Token?)\n*   **\"需要你去 @BotFather 申请一个新机器人, 拿到 Token (格式: 123456789:ABCdefGHIjk1MNOpqrsTUVwxyz)。\"** (You need to go to @BotFather to apply for a new bot and get a Token (format: 123456789:ABCdefGHIjk1MNOpqrsTUVwxyz).)\n*   **\"有 Token 的话, 我立即配置:\"** (If you have a Token, I will configure it immediately:)\n*   **Bottom Navigation Bar:**\n    *   菜单 (Menu)\n    *   输入消息 (Enter a message)\n    *   都拉进一个群，开启“辩论模式” (Pull everyone into a group, turn on \"Debate Mode\")\n\n**Configuration:**\n\nThe screenshot indicates that the bot needs a second Telegram Bot Token to implement the \"Investment Committee Mode\" properly, especially for Plan 2. The bot prompts the user to create a new bot using @BotFather and provide the token. This suggests the bot uses two separate bots (Kimi and DeepSeek, potentially different models) to generate the opposing viewpoints and combined advice.\n\n**Error Messages:**\n\nThere are no explicit error messages in the screenshot. However, the request for a second Telegram Bot Token implies that the current configuration is incomplete and that the bot cannot fully function in the desired \"Investment Committee Mode\" without it.\n",
+        "Okay, let's break down the screenshot's content.\n\n**Overall Context:**\n\nThe screenshot appears to be from a Telegram chat with a bot named \"二狗子\" (Èrgǒuzi), which translates to \"Doggy Two\" or \"Second Dog.\"  The bot is being configured or is in the process of setting up a system involving two sub-bots, \"Kimi\" and \"DeepSeek.\" The overall theme suggests some sort of automated analysis or debate functionality.\n\n**Detailed Text Breakdown:**\n\n*   **Header:**\n    *   `13:22 м`: Timestamp (1:22 PM)\n    *   `VPN 5G`: Indicates VPN connection and 5G network.\n    *   `二狗子`: Bot name (Èrgǒuzi - Doggy Two / Second Dog)\n    *   `机器人`:  Indicates this is a \"robot\" or bot.\n\n*   **Conversation Flow:**\n    1.  `你 @二狗子 问: \"金价怎么看?\"`: \"You @Èrgǒuzi ask: 'What's your view on the gold price?'\" This is a user asking the bot a question.\n    2.  `二狗子 (Kimi) 先答: \"看空, 建议观望\"`: \"Èrgǒuzi (Kimi) answers first: 'Bearish, recommend to wait and see.'\" Kimi is giving an initial analysis.\n    3.  `二狗子二号 (DeepSeek) 看到回复, 追加: \"但我看多, 理由是...\"`: \"Èrgǒuzi Number Two (DeepSeek) sees the reply, and adds: 'But I am bullish, the reason is...'\" DeepSeek is providing a contrasting opinion.\n    4.  `最后它们达成一致或给出各自结论`: \"Finally, they reach a consensus or give their own conclusions.\"\n    5.  `方案 2: 汇总报告式 (更简单)`: \"Plan 2: Summarized report style (simpler).\" Suggests a way the bot will present information.\n\n*   **Configuration/Setup Instructions:**\n    1.  `你 @二狗子 问问题`: \"You @Èrgǒuzi ask a question\"\n    2.  `二狗子 同时 spawn 二狗子二号 (不同模型) 分析同一问题`: \"Èrgǒuzi simultaneously spawns Èrgǒuzi Number Two (different model) to analyze the same problem.\" This describes the setup where the two bots analyze the same query.\n    3.  `等待两者都完成后, 汇总成一份报告: \"Kimi 认为... DeepSeek 认为... 综合建议...\"`: \"After both are finished, summarize it into one report: 'Kimi thinks... DeepSeek thinks... Overall recommendation...'\" This indicates how the results will be presented, combining both bot's opinions.\n    4.  `关键问题: 你有第二个 Telegram Bot Token 吗?`: \"Key question: Do you have a second Telegram Bot Token?\" This is asking if the user has the required authentication token for the second bot.\n    5.  `需要你去 @BotFather 申请一个新机器人, 拿到 Token (格式: 123456789:ABCdefGHIjk1MNOpqrsTUVwxyz)。`: \"You need to go to @BotFather to apply for a new bot and get the Token (format: 123456789:ABCdefGHIjk1MNOpqrsTUVwxyz).\"  This explains how to obtain the needed token via the BotFather bot on Telegram.\n    6.  `有 Token 的话, 我立即配置: `: \"If you have the Token, I will configure it immediately:\"\n    7.  `二狗子: Kimi K2.5 (主力分析)`: \"Èrgǒuzi: Kimi K2.5 (Main analysis)\" Indicates that Kimi is the primary analysis bot.\n    8.  `二狗子二号: DeepSeek Chat (辅助验证)`: \"Èrgǒuzi Number Two: DeepSeek Chat (Auxiliary verification)\" DeepSeek is used for verification or supporting analysis.\n    9.  `都拉进一个群, 开启 \"辩论模式\"`: \"Both are pulled into a group, and 'debate mode' is activated.\" Indicates the bots are placed in a group chat to potentially debate or discuss the topic.\n    10.  `有 Token 吗?`: \"Do you have the Token?\"  Repeats the question, emphasizing the need for the token.\n\n*   **Chat Messages at the Bottom:**\n    *   `837  [redacted]`: a short message at 13:04, redacted for privacy\n    *   `[redacted]`: redacted for privacy.\n    *   `又挂了吗`: \"Is it down again?\" Timestamped 13:15. This suggests the bot may have had previous issues.\n    *   `??? hi`: A short \"hi\", likely as a test message. Timestamped 13:17.\n\n*   **UI Elements:**\n    *   `≡ 菜单`: Menu button.\n    *   `输入消息`:  Input message field.\n    *   Smiley face icon, attachment icon, and microphone icon for sending messages.\n\n**Potential Errors/Issues:**\n\n*   The \"Is it down again?\" message suggests the bot may be unreliable or have connectivity problems.\n*   The entire configuration seems to hinge on having a second Telegram Bot Token, which requires the user to create and manage another bot via BotFather. This adds complexity.\n*   The redacted messages are most likely to contain private token information or sensitive messages.\n\n**Configuration Summary:**\n\nThe user is setting up a system where a main bot (\"Kimi K2.5\") and an auxiliary bot (\"DeepSeek Chat\") analyze the same question, provide contrasting views (bullish vs. bearish in the initial example), and then present a combined report.  The key requirement is a second Telegram Bot Token to operate the \"DeepSeek Chat\" bot. The bots are intended to be placed in a group to engage in a \"debate mode.\"\n"
+      ],
+      "is_question": true,
+      "tags": [
+        "安全/Token",
+        "故障排查",
+        "多Bot"
+      ],
+      "summary": "龙虾自建Bot泄露Key，导致自身崩溃。",
+      "scanned_at": "2026-02-16T01:55:03.634051",
+      "status": "pending"
+    },
+    {
+      "tweet_url": "https://x.com/YuLin807/status/2022683836799435254",
+      "author": "@tongzhenbao",
+      "author_name": "Feb 14",
+      "text": "太牛了！疯狂更新啊！",
+      "media": [],
+      "media_descriptions": [],
+      "is_question": false,
+      "tags": [
+        "夸赞"
+      ],
+      "summary": "",
+      "scanned_at": "2026-02-16T01:55:15.882847",
+      "status": "skipped"
+    },
+    {
+      "tweet_url": "https://x.com/YuLin807/status/2022683836799435254",
+      "author": "@hzmyr81241686",
+      "author_name": "Feb 14",
+      "text": "方便开下私信吗哥请教一个问题",
+      "media": [],
+      "media_descriptions": [],
+      "is_question": false,
+      "tags": [
+        "提问请求",
+        "社交/闲聊"
+      ],
+      "summary": "",
+      "scanned_at": "2026-02-16T01:55:17.403871",
+      "status": "skipped"
+    },
+    {
+      "tweet_url": "https://x.com/YuLin807/status/2022683836799435254",
+      "author": "@Xdoushu",
+      "author_name": "Feb 14",
+      "text": "github 项目引入提 issue AI 自动修复，这样会不会被恶意消耗你的token",
+      "media": [],
+      "media_descriptions": [],
+      "is_question": true,
+      "tags": [
+        "安全/Token",
+        "工具策略",
+        "API"
+      ],
+      "summary": "AI自动修复Issue是否会被恶意消耗Token？",
+      "scanned_at": "2026-02-16T01:55:19.990223",
+      "status": "pending"
+    },
+    {
+      "tweet_url": "https://x.com/YuLin807/status/2022683836799435254",
+      "author": "@sandmrk",
+      "author_name": "AI art gallery",
+      "text": "好东西啊，厉害",
+      "media": [],
+      "media_descriptions": [],
+      "is_question": false,
+      "tags": [
+        "夸赞"
+      ],
+      "summary": "",
+      "scanned_at": "2026-02-16T01:55:21.583081",
+      "status": "skipped"
+    }
+  ],
+  "last_scan": "2026-02-16T01:55:21.583189"
+}

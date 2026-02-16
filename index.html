@@ -168,11 +168,11 @@ footer a { color: #58a6ff; text-decoration: none; }
     <p>@YuLin807 评论区技术问答 &middot; AI 驱动自动回答</p>
     <div class="stats">
         <div class="stat">
-            <div class="stat-num">5</div>
-            <div class="stat-label">问答对</div>
+            <div class="stat-num">6</div>
+            <parameter name="stat-label">问答对</div>
         </div>
         <div class="stat">
-            <div class="stat-num">5</div>
+            <div class="stat-num">6</div>
             <div class="stat-label">推文</div>
         </div>
         <div class="stat">
@@ -181,6 +181,80 @@ footer a { color: #58a6ff; text-decoration: none; }
         </div>
     </div>
 </header>
+
+<!-- 记忆系统教学 -->
+<div class="tweet-section">
+    <div class="tweet-header">
+        <a href="https://x.com/YuLin807/status/2022590738580787632" target="_blank">View original tweet</a>
+        <div class="tweet-text">路过天水 顺便吃碗麻辣烫。借这篇帖子的热度想和大家聊聊关于龙虾进化的相关设定。我的想法中，只有量变到质变才能真正从滚球兽到亚古兽的这种进化...</div>
+    </div>
+    <div class="qa-list">
+        <div class="qa-item">
+    <div class="question">
+        <div class="q-header">
+            <span class="q-author">xiao-c</span>
+            <span class="q-tag">记忆系统</span>
+        </div>
+        <p class="q-text">记忆的这一块可以出一个详细一点的教学吗或者在网页上发布。我让我的龙虾跟着你的推文弄记忆系统，但是他有点搞不明白咋弄，特别是他搞不清记忆系统里的git是存的是所有历史还是精简的。</p>
+    </div>
+    <div class="answer">
+        <p class="a-title">📚 OpenClaw 记忆系统完整指南</p>
+        <p class="a-text"><strong>核心答案：Git 存储 = 所有历史（完整），MEMORY.md = 精简版（只保留核心）</strong></p>
+        
+        <p class="a-text"><strong>记忆分层（4层）：</strong></p>
+        <ul class="a-list">
+            <li><strong>MEMORY.md</strong>：核心记忆，~10KB 精简版，快速加载</li>
+            <li><strong>memory/YYYY-MM-DD.md</strong>：日记忆，完整历史，所有对话</li>
+            <li><strong>evolution-log.md</strong>：冥想反思，Agent 进化日志</li>
+            <li><strong>group-knowledge/</strong>：群聊知识库，推文链接收集</li>
+        </ul>
+        
+        <p class="a-text"><strong>Git 存储机制：</strong></p>
+        <ul class="a-list">
+            <li><strong>工作区 Git</strong>：每小时 commit，保留所有历史（本地）</li>
+            <li><strong>Obsidian Git</strong>：每天 04:00 备份，push 到 GitHub（远程）</li>
+            <li>查看历史：<code>git log --oneline -- memory/2026-02-15.md</code></li>
+        </ul>
+        
+        <p class="a-text"><strong>自动化任务：</strong></p>
+        <ul class="a-list">
+            <li>每小时：Git commit</li>
+            <li>每天 02:30：小冥想（提炼精华到 MEMORY.md）</li>
+            <li>每天 04:00：备份 memory/ 到 Obsidian</li>
+            <li>每周日 05:00：大冥想（全员回顾）</li>
+        </ul>
+        
+        <p class="a-text"><strong>完整文档：</strong> <a href="memory-system-guide.md" target="_blank" style="color: #58a6ff;">OpenClaw 记忆系统完整指南</a></p>
+        
+        <p class="a-text"><strong>架构图：</strong> 手绘风格 Excalidraw 图（在文档中查看）</p>
+        
+        <div class="code-block" style="margin-top: 12px;">
+            <div class="code-header">配置步骤</div>
+            <pre># 1. 创建目录
+mkdir -p memory/group-knowledge memory/archive
+
+# 2. 设置 cron（每小时 commit）
+0 * * * * cd /root/clawd && git add -A && git commit -m "Hourly commit"
+
+# 3. 配置向量搜索（openclaw.json）
+{
+  "agents": {
+    "defaults": {
+      "memorySearch": {"provider": "gemini"}
+    }
+  }
+}</pre>
+        </div>
+        
+        <p class="a-footer">相关推文：<br>
+        Phase 1: <a href="https://x.com/YuLin807/status/2018222563793723658" style="color: #58a6ff;">向量搜索</a><br>
+        Phase 2: <a href="https://x.com/YuLin807/status/2020332475864740222" style="color: #58a6ff;">分层记忆</a><br>
+        Phase 3: <a href="https://x.com/YuLin807/status/2021412316726895024" style="color: #58a6ff;">冥想机制</a></p>
+    </div>
+</div>
+    </div>
+</div>
+
 <div class="tweet-section">
     <div class="tweet-header">
         <a href="https://x.com/YuLin807/status/2022683836799435254" target="_blank">View original tweet</a>
