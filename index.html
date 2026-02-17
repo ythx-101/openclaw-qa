@@ -202,40 +202,16 @@ footer a { color: #58a6ff; text-decoration: none; }
         <div class="answer-label">✓ 完整指南</div>
         <div class="answer-text"><strong>核心答案：Git 存储 = 所有历史（完整），MEMORY.md = 精简版（只保留核心）</strong>
 
-<img src="memory-system-diagram.jpg" alt="OpenClaw 记忆系统架构" style="max-width: 100%; border-radius: 8px; margin: 16px 0;">
-
-<strong>记忆分层（4层）：</strong>
-
-1️⃣ <strong>MEMORY.md（核心记忆）</strong> - 精简版 ~10KB
-   - 身份、项目、规则、关键决策
-   - 每次冥想后手动提炼
-
-2️⃣ <strong>memory/YYYY-MM-DD.md（日记忆）</strong> - 详细版
-   - 每天的完整工作记录
-   - 所有对话历史
-
-3️⃣ <strong>evolution-log.md（进化日志）</strong>
-   - Agent 冥想产出
-   - 进化轨迹追踪
+<strong>记忆分层：</strong>
+- MEMORY.md：核心记忆（精简版）
+- memory/YYYY-MM-DD.md：日记忆（详细版）
+- evolution-log.md：进化日志
 
 <strong>数据流转：</strong>
 实时对话 → 日记.md → 冥想分析 → 提炼精华 → MEMORY.md → 向量搜索
 
-<strong>Git 存储：</strong>
-- 工作区 Git：每小时 commit，保留所有历史
-- Obsidian Git：每天 04:00 备份，完整镜像
-- memory_search：Gemini embedding 向量化
-
-<strong>自动化任务：</strong>
-- 每小时：Git commit
-- 每天 02:30：小冥想（提炼精华）
-- 每天 04:00：Obsidian 备份
-- 每周日 05:00：大冥想（周报）
-
 <strong>关键原则：</strong>
-MEMORY.md 只存精简版（~10KB），Git 保存所有历史。
-
-📚 <a href="memory-system-guide.html" style="color: #58a6ff;">查看完整指南 →</a></div>
+MEMORY.md 只存精简版，Git 保存所有历史。</div>
     </div>
 </div>
     </div>
@@ -245,8 +221,6 @@ MEMORY.md 只存精简版（~10KB），Git 保存所有历史。
     + <a href="https://github.com/ythx-101/x-monitor">x-monitor</a>
     &middot; MiniMax M2.5 + Gemini
     &middot; <a href="https://github.com/ythx-101/openclaw-qa">Source</a>
-    <br><br>
-    📚 精选指南: <a href="memory-system-guide.html">OpenClaw 记忆系统完整指南</a>
 </footer>
 </div>
 </body>
