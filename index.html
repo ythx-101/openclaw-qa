@@ -173,24 +173,18 @@ footer a { color: #58a6ff; text-decoration: none; }
         </div>
         <div class="stat">
             <div class="stat-num">1</div>
-            <div class="stat-label">推文</div>
+            <div class="stat-label">主题</div>
         </div>
         <div class="stat">
-            <div class="stat-num">02/16</div>
+            <div class="stat-num">02/17</div>
             <div class="stat-label">更新</div>
         </div>
     </div>
 </header>
 <div class="tweet-section">
     <div class="tweet-header">
-        <a href="https://x.com/YuLin807/status/2022683836799435254" target="_blank">View original tweet</a>
-        <div class="tweet-text">刚才做了几个事儿：
-
-1.让AI 写了个skill主要是用来抓推文和互动数据 已上架https://github.com/ythx-101/x-tweet-fetcher
-
-2.让 claude code 对github 项目引入提 issue AI 自动修复。
-
-3.同时为了回复评论区中的一些技术...</div>
+        <a href="https://ythx-101.github.io/openclaw-qa/" target="_blank">社区高频问题</a>
+        <div class="tweet-text">OpenClaw 使用中的常见技术问题汇总</div>
     </div>
     <div class="qa-list">
         <!-- 最新的 Q&A 自动置顶，手动添加新问答时放在这里 -->
@@ -198,24 +192,50 @@ footer a { color: #58a6ff; text-decoration: none; }
         <div class="qa-item">
     <div class="question">
         <div class="q-header">
-            <span class="q-author">抖叔笔记</span>
-            <span class="q-category">安全</span>
-            <span class="q-stats">1 likes &middot; 165 views &middot; 2026-02-16</span>
+            <span class="q-author">社区高频问题</span>
+            <span class="q-category">记忆系统</span>
+            <span class="q-stats">2026-02-17</span>
         </div>
-        <div class="q-text">github 项目引入提 issue AI 自动修复，这样会不会被恶意消耗你的token</div>
+        <div class="q-text">OpenClaw 的记忆系统是怎么工作的？Git 存的是所有历史还是精简的？</div>
     </div>
     <div class="answer">
-        <div class="answer-label">✓ AI Answer (MiniMax M2.5)</div>
-        <div class="answer-text">会，恶意提交大量issue确实可能消耗Token。
+        <div class="answer-label">✓ 完整指南</div>
+        <div class="answer-text"><strong>核心答案：Git 存储 = 所有历史（完整），MEMORY.md = 精简版（只保留核心）</strong>
 
-防护措施：
-1.  <strong>Webhook认证与签名验证</strong>：确保只有GitHub发送的合法请求触发AI。
-2.  <strong>Issue创建者权限控制</strong>：仅允许受信任的用户或贡献者触发AI修复流程。
-3.  <strong>频率限制（Rate Limiting）</strong>：限制单位时间内AI处理issue的数量。
-4.  <strong>人工审核机制</strong>：AI生成修复方案后需人工确认才能应用。
-5.  <strong>Token用量监控与告警</strong>：异常用量及时通知，快速响应。
+<img src="memory-system-diagram.jpg" alt="OpenClaw 记忆系统架构" style="max-width: 100%; border-radius: 8px; margin: 16px 0;">
 
-这些措施可有效降低恶意消耗风险。</div>
+<strong>记忆分层（4层）：</strong>
+
+1️⃣ <strong>MEMORY.md（核心记忆）</strong> - 精简版 ~10KB
+   - 身份、项目、规则、关键决策
+   - 每次冥想后手动提炼
+
+2️⃣ <strong>memory/YYYY-MM-DD.md（日记忆）</strong> - 详细版
+   - 每天的完整工作记录
+   - 所有对话历史
+
+3️⃣ <strong>evolution-log.md（进化日志）</strong>
+   - Agent 冥想产出
+   - 进化轨迹追踪
+
+<strong>数据流转：</strong>
+实时对话 → 日记.md → 冥想分析 → 提炼精华 → MEMORY.md → 向量搜索
+
+<strong>Git 存储：</strong>
+- 工作区 Git：每小时 commit，保留所有历史
+- Obsidian Git：每天 04:00 备份，完整镜像
+- memory_search：Gemini embedding 向量化
+
+<strong>自动化任务：</strong>
+- 每小时：Git commit
+- 每天 02:30：小冥想（提炼精华）
+- 每天 04:00：Obsidian 备份
+- 每周日 05:00：大冥想（周报）
+
+<strong>关键原则：</strong>
+MEMORY.md 只存精简版（~10KB），Git 保存所有历史。
+
+📚 <a href="memory-system-guide.html" style="color: #58a6ff;">查看完整指南 →</a></div>
     </div>
 </div>
     </div>
