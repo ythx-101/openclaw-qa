@@ -10,6 +10,8 @@
 
 **解决方案**：分层记忆系统 + Git 版本控制 + 向量搜索
 
+![OpenClaw 记忆系统架构](memory-system-diagram.jpg)
+
 ---
 
 ## 记忆分层（4层架构）
