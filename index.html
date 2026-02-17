@@ -168,11 +168,11 @@ footer a { color: #58a6ff; text-decoration: none; }
     <p>@YuLin807 评论区技术问答 &middot; AI 驱动自动回答</p>
     <div class="stats">
         <div class="stat">
-            <div class="stat-num">1</div>
+            <div class="stat-num">2</div>
             <div class="stat-label">问答对</div>
         </div>
         <div class="stat">
-            <div class="stat-num">1</div>
+            <div class="stat-num">2</div>
             <div class="stat-label">主题</div>
         </div>
         <div class="stat">
@@ -188,6 +188,61 @@ footer a { color: #58a6ff; text-decoration: none; }
     </div>
     <div class="qa-list">
         <!-- 最新的 Q&A 自动置顶，手动添加新问答时放在这里 -->
+        
+        <div class="qa-item">
+    <div class="question">
+        <div class="q-header">
+            <span class="q-author">@lipiisme (Peng L)</span>
+            <span class="q-category">Git自动化</span>
+            <span class="q-stats">2026-02-17</span>
+        </div>
+        <div class="q-text">本地 git 可以自动 action 部署吗</div>
+    </div>
+    <div class="answer">
+        <div class="answer-label">✓ 完整答案</div>
+        <div class="answer-text"><strong>可以！本地 Git 仓库完全可以实现类似 GitHub Actions 的自动部署，核心是 Git Hooks。</strong>
+
+<strong>方案1：Git Hooks（最简单）</strong>
+每次 commit 后自动部署：
+<pre>cd /path/to/repo/.git/hooks
+cat > post-commit << 'EOF'
+#!/bin/bash
+echo "🚀 自动部署触发..."
+npm run build
+rsync -avz dist/ user@server:/var/www/
+EOF
+chmod +x post-commit</pre>
+
+常用 hooks：
+• <code>post-commit</code> — 本地提交后立即触发
+• <code>post-merge</code> — 合并代码后触发  
+• <code>pre-push</code> — 推送前检查
+• <code>post-receive</code> — 服务器收到推送后触发
+
+<strong>方案2：Self-hosted CI（功能最全）</strong>
+推荐工具：Drone CI、Gitea Actions（兼容 GitHub Actions 语法）
+
+<strong>方案3：Watchman + 脚本（实时监听）</strong>
+监听文件变化，自动 commit + 部署
+
+<strong>OpenClaw 实战案例</strong>：
+• 每小时自动 commit（保存进度）
+• 每天 04:00 同步到 Obsidian（备份）
+• 推送后自动部署网页（post-receive hook）
+
+<strong>关键优势对比</strong>：
+• GitHub Actions：功能最强，但代码上云
+• 本地 Git Hooks：⚡ 秒级触发，完全本地，🆓 免费
+• Self-hosted CI：自己控制，速度快
+
+<strong>推荐路径</strong>：
+1. 起步：<code>.git/hooks/post-commit</code> 跑个 <code>npm run build</code>
+2. 进阶：用 <code>post-receive</code> 实现推送后服务器自动部署  
+3. 终极：搭 Drone CI，享受完整 CI/CD
+
+<strong>OpenClaw 哲学</strong>：能本地就本地，隐私 > 便利。</div>
+    </div>
+</div>
         
         <div class="qa-item">
     <div class="question">
