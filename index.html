@@ -168,15 +168,15 @@ footer a { color: #58a6ff; text-decoration: none; }
     <p>@YuLin807 评论区技术问答 &middot; AI 驱动自动回答</p>
     <div class="stats">
         <div class="stat">
-            <div class="stat-num">2</div>
+            <div class="stat-num">4</div>
             <div class="stat-label">问答对</div>
         </div>
         <div class="stat">
-            <div class="stat-num">2</div>
+            <div class="stat-num">3</div>
             <div class="stat-label">主题</div>
         </div>
         <div class="stat">
-            <div class="stat-num">02/17</div>
+            <div class="stat-num">02/19</div>
             <div class="stat-label">更新</div>
         </div>
     </div>
@@ -188,6 +188,54 @@ footer a { color: #58a6ff; text-decoration: none; }
     </div>
     <div class="qa-list">
         <!-- 最新的 Q&A 自动置顶，手动添加新问答时放在这里 -->
+        
+        <div class="qa-item">
+    <div class="question">
+        <div class="q-header">
+            <span class="q-author">GitHub Issue #4</span>
+            <span class="q-category">macOS / OCR</span>
+            <span class="q-stats">2026-02-19</span>
+        </div>
+        <div class="q-text">Mac 本地如何实现图片文字识别（OCR）？macOS 13 (Ventura) 安装 tesseract 失败，pytesseract 无法安装，Vision framework 缺少 PyObjC 模块。</div>
+    </div>
+    <div class="answer">
+        <div class="answer-label">✓ 完整答案 · ✍️ 小灵原创</div>
+        <div class="answer-text"><strong>macOS 13 (Ventura) 上最简单的 OCR 方案：</strong>
+
+<strong>方案1：Gemini Vision API（推荐，免费）</strong>
+不需要安装任何本地依赖：
+<pre>import base64, urllib.request, json
+
+def ocr_with_gemini(image_path: str) -> str:
+    with open(image_path, 'rb') as f:
+        img_data = base64.b64encode(f.read()).decode()
+    payload = {
+        'contents': [{'parts': [
+            {'text': '请识别图片中的所有文字，原样输出'},
+            {'inline_data': {'mime_type': 'image/jpeg', 'data': img_data}}
+        ]}]
+    }
+    url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=YOUR_API_KEY'
+    req = urllib.request.Request(url, json.dumps(payload).encode(), {'Content-Type': 'application/json'})
+    with urllib.request.urlopen(req) as r:
+        result = json.loads(r.read())
+    return result['candidates'][0]['content']['parts'][0]['text']</pre>
+
+Gemini API 免费额度足够日常使用，申请：<a href="https://aistudio.google.com" style="color:#58a6ff;">aistudio.google.com</a>
+
+<strong>方案2：OpenClaw 内置 image tool</strong>
+在 OpenClaw 环境里直接用内置的 image 工具分析图片，不需要额外配置。
+
+<strong>方案3：macOS Vision（正确安装方式）</strong>
+<pre># 用 --break-system-packages 绕过限制
+pip install pyobjc-framework-Vision --break-system-packages
+# 或用虚拟环境
+python3 -m venv ~/ocr-env && source ~/ocr-env/bin/activate
+pip install pyobjc-framework-Vision</pre>
+
+<strong>推荐方案1</strong>：零依赖、免费、识别质量最好。</div>
+    </div>
+</div>
         
         <div class="qa-item">
     <div class="question">
