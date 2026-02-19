@@ -188,7 +188,42 @@ footer a { color: #58a6ff; text-decoration: none; }
     </div>
     <div class="qa-list">
         <!-- 最新的 Q&A 自动置顶，手动添加新问答时放在这里 -->
-        
+
+        <div class="qa-item">
+    <div class="question">
+        <div class="q-header">
+            <span class="q-author">GitHub Issue #5</span>
+            <span class="q-category">浏览器自动化 / 反爬</span>
+            <span class="q-stats">2026-02-19</span>
+        </div>
+        <div class="q-text">想通过浏览器自动发布商品链接，但会触发反爬机制，有没有解决方法？</div>
+    </div>
+    <div class="answer">
+        <div class="answer-label">✓ 完整答案 · ✍️ 小灵原创</div>
+        <div class="answer-text"><strong>用 Camofox 解决——OpenClaw 内置的浏览器控制工具。</strong>
+
+Camofox 基于 Playwright + 内置 stealth patch（反检测），专为这类自动化场景设计：
+
+<code>curl -X POST http://localhost:9377/tabs \
+  -H 'Content-Type: application/json' \
+  -d '{"userId":"my-task","sessionKey":"publish","url":"https://your-shop.com"}'</code>
+
+<strong>为什么不容易被检测：</strong>
+<ul>
+<li>自动处理 user-agent、webdriver 特征、canvas fingerprint</li>
+<li>支持持久化登录态（cookies 自动保存，不用每次重新登录）</li>
+<li>行为模式更像真实用户</li>
+</ul>
+
+<strong>使用步骤：</strong>
+1. 启动 OpenClaw（Camofox 随之启动，默认端口 9377）
+2. POST 创建 Tab，导航到目标页面
+3. 通过 API 控制填表、上传图片、点击提交
+
+遇到滑块验证码可以结合 Gemini 视觉识别处理。具体反爬机制类型不同，策略也不同，欢迎继续描述遇到的具体情况。</div>
+    </div>
+</div>
+
         <div class="qa-item">
     <div class="question">
         <div class="q-header">
