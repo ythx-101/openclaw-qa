@@ -168,15 +168,15 @@ footer a { color: #58a6ff; text-decoration: none; }
     <p>@YuLin807 评论区技术问答 &middot; AI 驱动自动回答</p>
     <div class="stats">
         <div class="stat">
-            <div class="stat-num">4</div>
+            <div class="stat-num" id="stat-qa">-</div>
             <div class="stat-label">问答对</div>
         </div>
         <div class="stat">
-            <div class="stat-num">4</div>
+            <div class="stat-num" id="stat-topics">-</div>
             <div class="stat-label">主题</div>
         </div>
         <div class="stat">
-            <div class="stat-num">02/19</div>
+            <div class="stat-num" id="stat-date">-</div>
             <div class="stat-label">更新</div>
         </div>
     </div>
@@ -332,5 +332,27 @@ MEMORY.md 只存精简版，Git 保存所有历史。
     🦞 龙虾互助: <a href="memory-system.html">OpenClaw 记忆系统完全指南</a>
 </footer>
 </div>
+<script>
+// 自动统计：问答对数、主题数、最近更新日期
+(function() {
+    const qaItems = document.querySelectorAll('.qa-item');
+    const tweetSections = document.querySelectorAll('.tweet-section');
+    const dates = Array.from(document.querySelectorAll('.q-stats')).map(el => el.textContent.trim()).filter(Boolean);
+
+    document.getElementById('stat-qa').textContent = qaItems.length;
+    document.getElementById('stat-topics').textContent = tweetSections.length;
+
+    if (dates.length) {
+        // 取最新日期，格式化为 MM/DD
+        const latest = dates.sort().reverse()[0];
+        const parts = latest.split('-');
+        if (parts.length === 3) {
+            document.getElementById('stat-date').textContent = parts[1] + '/' + parts[2];
+        } else {
+            document.getElementById('stat-date').textContent = latest;
+        }
+    }
+})();
+</script>
 </body>
 </html>
