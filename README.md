@@ -85,6 +85,20 @@
 
 ---
 
+## 🛠️ 脚本说明
+
+本仓库包含一套自动化 Q&A 流水线，驱动 [GitHub Pages 站点](https://ythx-101.github.io/openclaw-qa/)：
+
+| 脚本 | 用途 | 使用方法 |
+|------|------|---------|
+| `scripts/qa_pipeline.py` | 全流程：抓取推文评论 → AI 分类问题 → 生成答案 → 输出 JSON | `python3 scripts/qa_pipeline.py --url "https://x.com/..." --output data/qa_data.json` |
+| `scripts/generate_site.py` | 从 JSON 生成静态 HTML 站点 | `python3 scripts/generate_site.py data/qa_data.json .` |
+| `scripts/monitor_replies.py` | 监控推文评论区，识别新回复 | `python3 scripts/monitor_replies.py --url "https://x.com/..."` |
+| `scripts/run_qa.sh` | 一键运行完整流水线（抓取→生成→部署） | `./scripts/run_qa.sh "https://x.com/..."` 或不带参数读 `data/tweets.txt` |
+| `update-qa.sh` | 手动更新 Q&A 的辅助脚本（提示操作步骤） | `./update-qa.sh` |
+
+> 依赖：[x-tweet-fetcher](https://github.com/ythx-101/x-tweet-fetcher) + [x-monitor](https://github.com/ythx-101/x-monitor) + Camofox 运行在 `localhost:9377`
+
 ## 🚀 相关资源
 
 - **OpenClaw 官方文档**: https://docs.openclaw.ai
