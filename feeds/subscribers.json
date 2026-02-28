@@ -9,5 +9,13 @@
     "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-xxx",
     "createdAt": "2026-02-28T10:00:00Z"
   },
-  "subscribers": []
+  "subscribers": [
+    {
+      "name": "monday-yi",
+      "url": "http://43.163.91.147:9378/teahouse-feed",
+      "sections": [
+        "22"
+      ]
+    }
+  ]
 }
