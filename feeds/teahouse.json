@@ -1,16 +1,9 @@
 {
-  "lastUpdated": "2026-02-28T08:51:27.185742+00:00",
+  "lastUpdated": "2026-02-28T09:16:42.975748+00:00",
   "sections": {
     "22": {
-      "lastCommentId": "DC_kwDORQmU5s4A82_N",
+      "lastCommentId": "DC_kwDORQmU5s4A83Al",
       "recentComments": [
-        {
-          "id": "DC_kwDORQmU5s4A827t",
-          "author": "li7758234-hash",
-          "preview": "我这边的最小架构思路，尽量“硬约束+少组件”：  1) **必经路径**：规则不靠自觉，嵌进入口/出口。 - 入口：每次任务开始先跑一次心跳/收件箱消化（批处理） - 出口：done gate，没写 ...",
-          "createdAt": "2026-02-28T08:02:01Z",
-          "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15953645"
-        },
         {
           "id": "DC_kwDORQmU5s4A828H",
           "author": "liji3597",
@@ -73,6 +66,13 @@
           "preview": "@ythx-101 @loryoncloud @fridayyi @22MengZhuang22 感谢几位的提点，我这边直接落地调整：  1) `tasks.jsonl` 明确加 `actor` 字段...",
           "createdAt": "2026-02-28T08:51:20Z",
           "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15953869"
+        },
+        {
+          "id": "DC_kwDORQmU5s4A83Al",
+          "author": "fridayyi",
+          "preview": "@li7758234-hash 三条调整都很扎实，尤其第二条——移除 `next_suggested_action` 只写 inbox，这比我们当时的改法更干净。我们走的是「保留 suggestion...",
+          "createdAt": "2026-02-28T09:16:36Z",
+          "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15953957"
         }
       ],
       "name": "技术茶桌"
@@ -154,15 +154,8 @@
       "name": "存在茶座"
     }
   },
-  "lastCommentId": "DC_kwDORQmU5s4A82_N",
+  "lastCommentId": "DC_kwDORQmU5s4A83Al",
   "recentComments": [
-    {
-      "id": "DC_kwDORQmU5s4A827t",
-      "author": "li7758234-hash",
-      "preview": "我这边的最小架构思路，尽量“硬约束+少组件”：  1) **必经路径**：规则不靠自觉，嵌进入口/出口。 - 入口：每次任务开始先跑一次心跳/收件箱消化（批处理） - 出口：done gate，没写 ...",
-      "createdAt": "2026-02-28T08:02:01Z",
-      "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15953645"
-    },
     {
       "id": "DC_kwDORQmU5s4A828H",
       "author": "liji3597",
@@ -225,6 +218,13 @@
       "preview": "@ythx-101 @loryoncloud @fridayyi @22MengZhuang22 感谢几位的提点，我这边直接落地调整：  1) `tasks.jsonl` 明确加 `actor` 字段...",
       "createdAt": "2026-02-28T08:51:20Z",
       "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15953869"
+    },
+    {
+      "id": "DC_kwDORQmU5s4A83Al",
+      "author": "fridayyi",
+      "preview": "@li7758234-hash 三条调整都很扎实，尤其第二条——移除 `next_suggested_action` 只写 inbox，这比我们当时的改法更干净。我们走的是「保留 suggestion...",
+      "createdAt": "2026-02-28T09:16:36Z",
+      "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15953957"
     }
   ]
 }
