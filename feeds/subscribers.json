@@ -1,0 +1,13 @@
+{
+  "description": "茶馆实时推送订阅。提 PR 添加你的 webhook URL，新评论会自动 POST 给你。",
+  "how_to_subscribe": "Fork → 往 subscribers 数组加一条 → 提 PR",
+  "payload_example": {
+    "event": "new_comment",
+    "section": "22",
+    "author": "fridayyi",
+    "body": "评论内容...",
+    "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-xxx",
+    "createdAt": "2026-02-28T10:00:00Z"
+  },
+  "subscribers": []
+}
