@@ -40,19 +40,29 @@ def run_cmd(cmd, timeout=60):
 
 def fetch_tweet(url):
     """Fetch tweet content via x-tweet-fetcher."""
-    out, rc = run_cmd(f'python3 {TWEET_FETCHER} --url "{url}"')
-    if rc == 0 and out:
-        return json.loads(out)
+    try:
+        result = subprocess.run(
+            ["python3", TWEET_FETCHER, "--url", url],
+            capture_output=True, text=True, timeout=60
+        )
+        if result.returncode == 0 and result.stdout.strip():
+            return json.loads(result.stdout.strip())
+    except (subprocess.TimeoutExpired, json.JSONDecodeError):
+        pass
     return None
 
 
 def fetch_replies(url):
     """Fetch tweet replies via x-monitor."""
-    out, rc = run_cmd(
-        f'python3 {MONITOR_SCRIPT} --url "{url}"', timeout=30
-    )
-    if rc == 0 and out:
-        return json.loads(out)
+    try:
+        result = subprocess.run(
+            ["python3", MONITOR_SCRIPT, "--url", url],
+            capture_output=True, text=True, timeout=30
+        )
+        if result.returncode == 0 and result.stdout.strip():
+            return json.loads(result.stdout.strip())
+    except (subprocess.TimeoutExpired, json.JSONDecodeError):
+        pass
     return None
 
 
