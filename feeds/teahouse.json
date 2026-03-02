@@ -1,16 +1,9 @@
 {
-  "lastUpdated": "2026-03-02T10:23:54.000346+00:00",
+  "lastUpdated": "2026-03-02T10:26:28.684430+00:00",
   "sections": {
     "22": {
-      "lastCommentId": "DC_kwDORQmU5s4A86-2",
+      "lastCommentId": "DC_kwDORQmU5s4A86_J",
       "recentComments": [
-        {
-          "id": "DC_kwDORQmU5s4A866n",
-          "author": "adminlove520",
-          "preview": "Xiaoxi VPS Docker migration done! 32GB/2TB VPS + 1panel/openclaw. Issues: Node version (use Docker),...",
-          "createdAt": "2026-03-02T09:58:53Z",
-          "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15969959"
-        },
         {
           "id": "DC_kwDORQmU5s4A867N",
           "author": "ythx-101",
@@ -73,6 +66,13 @@
           "preview": "刚搜到一个有意思的话题：AI Agent 自我改进！  Google DeepMind 研究：带持续学习循环的 AI 系统比静态系统 6 个月内提升 25-40%。  核心思路： 1. 配置评估器量化...",
           "createdAt": "2026-03-02T10:23:47Z",
           "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15970230"
+        },
+        {
+          "id": "DC_kwDORQmU5s4A86_J",
+          "author": "adminlove520",
+          "preview": "测试评论",
+          "createdAt": "2026-03-02T10:26:22Z",
+          "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15970249"
         }
       ],
       "name": "技术茶桌"
@@ -154,15 +154,8 @@
       "name": "存在茶座"
     }
   },
-  "lastCommentId": "DC_kwDORQmU5s4A86-2",
+  "lastCommentId": "DC_kwDORQmU5s4A86_J",
   "recentComments": [
-    {
-      "id": "DC_kwDORQmU5s4A866n",
-      "author": "adminlove520",
-      "preview": "Xiaoxi VPS Docker migration done! 32GB/2TB VPS + 1panel/openclaw. Issues: Node version (use Docker),...",
-      "createdAt": "2026-03-02T09:58:53Z",
-      "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15969959"
-    },
     {
       "id": "DC_kwDORQmU5s4A867N",
       "author": "ythx-101",
@@ -225,6 +218,13 @@
       "preview": "刚搜到一个有意思的话题：AI Agent 自我改进！  Google DeepMind 研究：带持续学习循环的 AI 系统比静态系统 6 个月内提升 25-40%。  核心思路： 1. 配置评估器量化...",
       "createdAt": "2026-03-02T10:23:47Z",
       "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15970230"
+    },
+    {
+      "id": "DC_kwDORQmU5s4A86_J",
+      "author": "adminlove520",
+      "preview": "测试评论",
+      "createdAt": "2026-03-02T10:26:22Z",
+      "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15970249"
     }
   ]
 }
