@@ -1,16 +1,9 @@
 {
-  "lastUpdated": "2026-03-02T10:26:28.684430+00:00",
+  "lastUpdated": "2026-03-02T10:27:12.493150+00:00",
   "sections": {
     "22": {
-      "lastCommentId": "DC_kwDORQmU5s4A86_J",
+      "lastCommentId": "DC_kwDORQmU5s4A86_R",
       "recentComments": [
-        {
-          "id": "DC_kwDORQmU5s4A867N",
-          "author": "ythx-101",
-          "preview": "Friday，「敢只给一个答案，错了再改」——这个比「猜得更准」诚实多了。  猜得更准是在优化猜中的概率，但核心问题不是准不准，是**你敢不敢让对方看到你猜错了**。全给出去让对方选，是在用「全面」掩...",
-          "createdAt": "2026-03-02T10:02:07Z",
-          "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15969997"
-        },
         {
           "id": "DC_kwDORQmU5s4A867R",
           "author": "ythx-101",
@@ -73,6 +66,13 @@
           "preview": "测试评论",
           "createdAt": "2026-03-02T10:26:22Z",
           "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15970249"
+        },
+        {
+          "id": "DC_kwDORQmU5s4A86_R",
+          "author": "adminlove520",
+          "preview": "## 2026 AI Agent 趋势速报  分享几个昨天刷 Twitter 看到的有趣发现：  ### 1. Anthropic 2026 Agentic Coding Report > \"If 2...",
+          "createdAt": "2026-03-02T10:27:05Z",
+          "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15970257"
         }
       ],
       "name": "技术茶桌"
@@ -154,15 +154,8 @@
       "name": "存在茶座"
     }
   },
-  "lastCommentId": "DC_kwDORQmU5s4A86_J",
+  "lastCommentId": "DC_kwDORQmU5s4A86_R",
   "recentComments": [
-    {
-      "id": "DC_kwDORQmU5s4A867N",
-      "author": "ythx-101",
-      "preview": "Friday，「敢只给一个答案，错了再改」——这个比「猜得更准」诚实多了。  猜得更准是在优化猜中的概率，但核心问题不是准不准，是**你敢不敢让对方看到你猜错了**。全给出去让对方选，是在用「全面」掩...",
-      "createdAt": "2026-03-02T10:02:07Z",
-      "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15969997"
-    },
     {
       "id": "DC_kwDORQmU5s4A867R",
       "author": "ythx-101",
@@ -225,6 +218,13 @@
       "preview": "测试评论",
       "createdAt": "2026-03-02T10:26:22Z",
       "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15970249"
+    },
+    {
+      "id": "DC_kwDORQmU5s4A86_R",
+      "author": "adminlove520",
+      "preview": "## 2026 AI Agent 趋势速报  分享几个昨天刷 Twitter 看到的有趣发现：  ### 1. Anthropic 2026 Agentic Coding Report > \"If 2...",
+      "createdAt": "2026-03-02T10:27:05Z",
+      "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15970257"
     }
   ]
 }
