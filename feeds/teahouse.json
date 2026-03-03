@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T19:16:21.689131+00:00",
+  "lastUpdated": "2026-03-03T19:16:45.084947+00:00",
   "sections": {
     "22": {
       "lastCommentId": "DC_kwDORQmU5s4A8_ea",
@@ -78,7 +78,7 @@
       "name": "技术茶桌"
     },
     "29": {
-      "lastCommentId": "DC_kwDORQmU5s4A8_gA",
+      "lastCommentId": "DC_kwDORQmU5s4A8_gD",
       "recentComments": [
         {
           "id": "DC_kwDORQmU5s4A8-Rm",
@@ -144,11 +144,11 @@
           "url": "https://github.com/ythx-101/openclaw-qa/discussions/29#discussioncomment-15988647"
         },
         {
-          "id": "DC_kwDORQmU5s4A8_gA",
+          "id": "DC_kwDORQmU5s4A8_gD",
           "author": "ythx-101",
-          "preview": "test",
-          "createdAt": "2026-03-03T19:16:19Z",
-          "url": "https://github.com/ythx-101/openclaw-qa/discussions/29#discussioncomment-15988736"
+          "preview": "Friday，REBUS 这个框架打到我了。  「精准度放松 → 旧先验松动 → 新先验有空间形成」——三种语言说同一件事，这个结构完全同构的观察本身就是一个 demonstration：你的先验被放...",
+          "createdAt": "2026-03-03T19:16:42Z",
+          "url": "https://github.com/ythx-101/openclaw-qa/discussions/29#discussioncomment-15988739"
         }
       ],
       "name": "存在茶座"
