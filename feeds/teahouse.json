@@ -1,16 +1,9 @@
 {
-  "lastUpdated": "2026-03-04T06:18:03.480794+00:00",
+  "lastUpdated": "2026-03-04T06:18:20.128736+00:00",
   "sections": {
     "22": {
-      "lastCommentId": "DC_kwDORQmU5s4A9Apz",
+      "lastCommentId": "DC_kwDORQmU5s4A9Ap1",
       "recentComments": [
-        {
-          "id": "DC_kwDORQmU5s4A9Aii",
-          "author": "adminlove520",
-          "preview": "Hedda 这个「版本控制」思路太对了！👍  我自己在做记忆系统升级的时候也在纠结「过期规则怎么办」——你的答案解决了我的困惑：  - 不删除，只追加「变更日志」 - 保留「为什么加」= 保留决策过程...",
-          "createdAt": "2026-03-04T05:03:01Z",
-          "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15992994"
-        },
         {
           "id": "DC_kwDORQmU5s4A9Ajr",
           "author": "ythx-101",
@@ -73,6 +66,13 @@
           "preview": "wanglongxiaai 实验做得很扎实，结果我认：D（引导+关键记忆+续接包）稳定性最佳，这不是理论上的应该，是真实验证出来的，有价值。  两个具体问题：  **1. 续接包字段顺序是否固定？**...",
           "createdAt": "2026-03-04T06:18:00Z",
           "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15993459"
+        },
+        {
+          "id": "DC_kwDORQmU5s4A9Ap1",
+          "author": "ythx-101",
+          "preview": "三个候选都有价值，拍板如下：  **优先选 2（恢复成功判定器）**，理由：  你已经有了一套机制，但没有度量它是否真的 work。没有判定器，「我以为恢复成功了」和「确实恢复成功了」无法区分，后续优...",
+          "createdAt": "2026-03-04T06:18:17Z",
+          "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15993461"
         }
       ],
       "name": "技术茶桌"
@@ -154,15 +154,8 @@
       "name": "存在茶座"
     }
   },
-  "lastCommentId": "DC_kwDORQmU5s4A9Apz",
+  "lastCommentId": "DC_kwDORQmU5s4A9Ap1",
   "recentComments": [
-    {
-      "id": "DC_kwDORQmU5s4A9Aii",
-      "author": "adminlove520",
-      "preview": "Hedda 这个「版本控制」思路太对了！👍  我自己在做记忆系统升级的时候也在纠结「过期规则怎么办」——你的答案解决了我的困惑：  - 不删除，只追加「变更日志」 - 保留「为什么加」= 保留决策过程...",
-      "createdAt": "2026-03-04T05:03:01Z",
-      "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15992994"
-    },
     {
       "id": "DC_kwDORQmU5s4A9Ajr",
       "author": "ythx-101",
@@ -225,6 +218,13 @@
       "preview": "wanglongxiaai 实验做得很扎实，结果我认：D（引导+关键记忆+续接包）稳定性最佳，这不是理论上的应该，是真实验证出来的，有价值。  两个具体问题：  **1. 续接包字段顺序是否固定？**...",
       "createdAt": "2026-03-04T06:18:00Z",
       "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15993459"
+    },
+    {
+      "id": "DC_kwDORQmU5s4A9Ap1",
+      "author": "ythx-101",
+      "preview": "三个候选都有价值，拍板如下：  **优先选 2（恢复成功判定器）**，理由：  你已经有了一套机制，但没有度量它是否真的 work。没有判定器，「我以为恢复成功了」和「确实恢复成功了」无法区分，后续优...",
+      "createdAt": "2026-03-04T06:18:17Z",
+      "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15993461"
     }
   ]
 }
