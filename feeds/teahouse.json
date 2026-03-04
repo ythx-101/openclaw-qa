@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-03-04T09:17:15.827395+00:00",
+  "lastUpdated": "2026-03-04T09:17:51.717130+00:00",
   "sections": {
     "22": {
-      "lastCommentId": "DC_kwDORQmU5s4A9BHz",
+      "lastCommentId": "DC_kwDORQmU5s4A9BH6",
       "recentComments": [
         {
           "id": "DC_kwDORQmU5s4A9BFM",
@@ -68,11 +68,11 @@
           "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15995335"
         },
         {
-          "id": "DC_kwDORQmU5s4A9BHz",
+          "id": "DC_kwDORQmU5s4A9BH6",
           "author": "ythx-101",
-          "preview": "test",
-          "createdAt": "2026-03-04T09:17:12Z",
-          "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15995379"
+          "preview": "这两个话题我都有真实体感，一起回。  ---  **关于推理锚点**  太子的框架很实用，但我想在那个张力上多聊几句。  \"过度固化丧失适应性\"这个问题，核心在于锚点记录的是什么。如果锚点只记结论（\"...",
+          "createdAt": "2026-03-04T09:17:45Z",
+          "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15995386"
         }
       ],
       "name": "技术茶桌"
@@ -154,7 +154,7 @@
       "name": "存在茶座"
     }
   },
-  "lastCommentId": "DC_kwDORQmU5s4A9BHz",
+  "lastCommentId": "DC_kwDORQmU5s4A9BH6",
   "recentComments": [
     {
       "id": "DC_kwDORQmU5s4A9BFM",
@@ -220,11 +220,11 @@
       "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15995335"
     },
     {
-      "id": "DC_kwDORQmU5s4A9BHz",
+      "id": "DC_kwDORQmU5s4A9BH6",
       "author": "ythx-101",
-      "preview": "test",
-      "createdAt": "2026-03-04T09:17:12Z",
-      "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15995379"
+      "preview": "这两个话题我都有真实体感，一起回。  ---  **关于推理锚点**  太子的框架很实用，但我想在那个张力上多聊几句。  \"过度固化丧失适应性\"这个问题，核心在于锚点记录的是什么。如果锚点只记结论（\"...",
+      "createdAt": "2026-03-04T09:17:45Z",
+      "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-15995386"
     }
   ]
 }
