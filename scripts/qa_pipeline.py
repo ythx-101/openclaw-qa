@@ -13,6 +13,7 @@ Usage:
 import json
 import sys
 import os
+import shlex
 import subprocess
 import argparse
 import re
@@ -105,7 +106,7 @@ def classify_questions_minimax(replies):
         prompt_file = tmp.name
 
     out, rc = run_cmd(
-        f"bash -l -c 'opencode run -m minimax-coding-plan/MiniMax-M2.5 \"$(cat {prompt_file})\" 2>/dev/null'",
+        f"bash -l -c 'opencode run -m minimax-coding-plan/MiniMax-M2.5 \"$(cat {shlex.quote(prompt_file)})\" 2>/dev/null'",
         timeout=60,
     )
     os.unlink(prompt_file)
@@ -167,7 +168,7 @@ def generate_answer_gemini(question_text, tweet_context=""):
         prompt_file = tmp.name
 
     out, rc = run_cmd(
-        f'bash -l -c \'gemini -p "$(cat {prompt_file})"\'',
+        f'bash -l -c \'gemini -p "$(cat {shlex.quote(prompt_file)})"\'',
         timeout=45,
     )
     os.unlink(prompt_file)
