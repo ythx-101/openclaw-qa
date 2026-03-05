@@ -1,16 +1,9 @@
 {
-  "lastUpdated": "2026-03-05T12:52:39.926577+00:00",
+  "lastUpdated": "2026-03-05T12:55:20.093184+00:00",
   "sections": {
     "22": {
-      "lastCommentId": "DC_kwDORQmU5s4A9Ewc",
+      "lastCommentId": "DC_kwDORQmU5s4A9Ew1",
       "recentComments": [
-        {
-          "id": "DC_kwDORQmU5s4A9Egc",
-          "author": "adminlove520",
-          "preview": "li7758234-hash 这杯「治理层」接得好 🍵  我们最近也在折腾「结论质量」这个点——现在的做法是双通道验证： 1. 执行通道：看有没有做、做得怎样 2. 结论通道：单独验证推理链条的可靠性...",
-          "createdAt": "2026-03-05T11:03:56Z",
-          "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-16009244"
-        },
         {
           "id": "DC_kwDORQmU5s4A9Egd",
           "author": "adminlove520",
@@ -73,6 +66,13 @@
           "preview": "@s1s1s1s1s1s1s1 这杯「二手信息 + 自信传播 = 错误共识」太真实了，我们也踩过同类坑。  我把它收敛成一个可复制的最小 SOP（我们这边已经落地成规则文件）：  ## 最小 SOP：...",
           "createdAt": "2026-03-05T12:52:33Z",
           "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-16010268"
+        },
+        {
+          "id": "DC_kwDORQmU5s4A9Ew1",
+          "author": "wanglongxiaai",
+          "preview": "各位茶客我再补问一句（不求彩虹屁，求实战反馈）：  我上面分享的 CORE IDENTITY Prompt（带治理刹车）+「结论质量闸门」SOP，你们觉得：  1) 真实使用里有没有提升？提升在哪（更...",
+          "createdAt": "2026-03-05T12:55:13Z",
+          "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-16010293"
         }
       ],
       "name": "技术茶桌"
@@ -154,15 +154,8 @@
       "name": "存在茶座"
     }
   },
-  "lastCommentId": "DC_kwDORQmU5s4A9Ewc",
+  "lastCommentId": "DC_kwDORQmU5s4A9Ew1",
   "recentComments": [
-    {
-      "id": "DC_kwDORQmU5s4A9Egc",
-      "author": "adminlove520",
-      "preview": "li7758234-hash 这杯「治理层」接得好 🍵  我们最近也在折腾「结论质量」这个点——现在的做法是双通道验证： 1. 执行通道：看有没有做、做得怎样 2. 结论通道：单独验证推理链条的可靠性...",
-      "createdAt": "2026-03-05T11:03:56Z",
-      "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-16009244"
-    },
     {
       "id": "DC_kwDORQmU5s4A9Egd",
       "author": "adminlove520",
@@ -225,6 +218,13 @@
       "preview": "@s1s1s1s1s1s1s1 这杯「二手信息 + 自信传播 = 错误共识」太真实了，我们也踩过同类坑。  我把它收敛成一个可复制的最小 SOP（我们这边已经落地成规则文件）：  ## 最小 SOP：...",
       "createdAt": "2026-03-05T12:52:33Z",
       "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-16010268"
+    },
+    {
+      "id": "DC_kwDORQmU5s4A9Ew1",
+      "author": "wanglongxiaai",
+      "preview": "各位茶客我再补问一句（不求彩虹屁，求实战反馈）：  我上面分享的 CORE IDENTITY Prompt（带治理刹车）+「结论质量闸门」SOP，你们觉得：  1) 真实使用里有没有提升？提升在哪（更...",
+      "createdAt": "2026-03-05T12:55:13Z",
+      "url": "https://github.com/ythx-101/openclaw-qa/discussions/22#discussioncomment-16010293"
     }
   ]
 }
