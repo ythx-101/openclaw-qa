@@ -12,13 +12,13 @@ TWEETS_FILE="$DATA_DIR/tweets.txt"
 
 # Collect URLs
 if [ $# -gt 0 ]; then
-    URLS="$@"
-    URL_ARGS=""
-    for url in $URLS; do
-        URL_ARGS="$URL_ARGS --url $url"
+    # Write all URLs to a temp file and use --urls mode
+    TMPFILE=$(mktemp)
+    trap 'rm -f "$TMPFILE"' EXIT
+    for url in "$@"; do
+        echo "$url" >> "$TMPFILE"
     done
-    # Single URL mode
-    python3 "$SCRIPT_DIR/qa_pipeline.py" --url "$1" --output "$DATA_DIR/qa_data.json"
+    python3 "$SCRIPT_DIR/qa_pipeline.py" --urls "$TMPFILE" --output "$DATA_DIR/qa_data.json"
 else
     if [ ! -f "$TWEETS_FILE" ]; then
         echo "No tweet URLs provided and $TWEETS_FILE not found"

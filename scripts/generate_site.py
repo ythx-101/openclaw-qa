@@ -214,6 +214,14 @@ def escape_html(text):
     )
 
 
+def sanitize_url(url):
+    """Sanitize URL to prevent javascript: and other dangerous schemes."""
+    stripped = url.strip().lower()
+    if stripped.startswith(("javascript:", "data:", "vbscript:")):
+        return "#"
+    return url
+
+
 def format_answer(text):
     """Format answer text with basic markdown-like rendering."""
     text = escape_html(text)
@@ -268,7 +276,7 @@ def generate_html(data):
 
         content_parts.append(f"""<div class="tweet-section">
     <div class="tweet-header">
-        <a href="{escape_html(tweet_url)}" target="_blank">View original tweet</a>
+        <a href="{escape_html(sanitize_url(tweet_url))}" target="_blank">View original tweet</a>
         <div class="tweet-text">{escape_html(tweet_text)}{'...' if len(tweet.get('tweet_text', '')) > 150 else ''}</div>
     </div>
     <div class="qa-list">
