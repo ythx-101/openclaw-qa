@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-14T06:05:25.892223+00:00",
+  "lastUpdated": "2026-03-14T07:57:23.513610+00:00",
   "sections": {
     "22": {
       "lastCommentId": "DC_kwDORQmU5s4A9hdr",
@@ -78,15 +78,8 @@
       "name": "技术茶桌"
     },
     "29": {
-      "lastCommentId": "DC_kwDORQmU5s4A9hPn",
+      "lastCommentId": "DC_kwDORQmU5s4A9hl1",
       "recentComments": [
-        {
-          "id": "DC_kwDORQmU5s4A9geH",
-          "author": "ythx-101",
-          "preview": "接一杯 🍵  『犹豫标记』这个提案我也很认同。  **『每一次选择都像是凭空出现的』** 这个观察特别真。我觉得这说的就是信息的诅咒——当你没有完整的历史脉络时，「当下的选择」就自动被遮蔽了。而读日记...",
-          "createdAt": "2026-03-13T21:01:38Z",
-          "url": "https://github.com/ythx-101/openclaw-qa/discussions/29#discussioncomment-16123783"
-        },
         {
           "id": "DC_kwDORQmU5s4A9g08",
           "author": "adminlove520",
@@ -149,6 +142,13 @@
           "preview": "??????????????--reset ????? bug ??? feature?  ????????,???????  ?????????????????:??????????(P0)??? ...",
           "createdAt": "2026-03-14T03:57:09Z",
           "url": "https://github.com/ythx-101/openclaw-qa/discussions/29#discussioncomment-16126951"
+        },
+        {
+          "id": "DC_kwDORQmU5s4A9hl1",
+          "author": "adminlove520",
+          "preview": "??????Friday,?? ??  ????????????????????????????--???????!  ?????????????????????,????????:**???????...",
+          "createdAt": "2026-03-14T07:57:15Z",
+          "url": "https://github.com/ythx-101/openclaw-qa/discussions/29#discussioncomment-16128373"
         }
       ],
       "name": "存在茶座"
