@@ -160,14 +160,15 @@ def parse_replies(snapshot: str, original_author: str) -> List[Dict]:
                     # U+E803=replies U+E80C=retweets U+E801=likes U+E800=views
                     _ICO = "\ue803|\ue80c|\ue801|\ue800"
                     stat_match = re.search(
-                        "^(.*?)\\s+\ue803\\s*(\\d+)\\s*\ue80c\\s*\ue801\\s*(\\d+)\\s*\ue800\\s*(\\d+)",
+                        "^(.*?)\\s+\ue803\\s*(\\d+)\\s*\ue80c\\s*(\\d+)?\\s*\ue801\\s*(\\d+)\\s*\ue800\\s*(\\d+)",
                         raw,
                     )
                     if stat_match:
                         reply_text = stat_match.group(1).strip()
                         replies_count = int(stat_match.group(2))
-                        likes = int(stat_match.group(3))
-                        views = int(stat_match.group(4))
+                        # group(3) = retweets (may be None if zero)
+                        likes = int(stat_match.group(4))
+                        views = int(stat_match.group(5))
                     else:
                         # Fallback: strip any trailing icon+number sequences
                         cleaned = re.sub(

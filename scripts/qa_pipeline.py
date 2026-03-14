@@ -99,14 +99,14 @@ def classify_questions_minimax(replies):
 
 只返回JSON数组，不要其他文字。"""
 
-    # Write prompt to temp file to avoid shell escaping issues
+    # Write prompt to temp file and pass via stdin to avoid shell injection
     import tempfile
     with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as tmp:
         tmp.write(prompt)
         prompt_file = tmp.name
 
     out, rc = run_cmd(
-        f"bash -l -c 'opencode run -m minimax-coding-plan/MiniMax-M2.5 \"$(cat {shlex.quote(prompt_file)})\" 2>/dev/null'",
+        f"bash -l -c 'opencode run -m minimax-coding-plan/MiniMax-M2.5 - 2>/dev/null < {shlex.quote(prompt_file)}'",
         timeout=60,
     )
     os.unlink(prompt_file)
@@ -161,14 +161,14 @@ def generate_answer_gemini(question_text, tweet_context=""):
 3. 如果涉及安全问题，说明防护措施
 4. 保持在200字以内"""
 
-    # Write prompt to temp file to avoid shell escaping
+    # Write prompt to temp file and pass safely to avoid shell injection
     import tempfile
     with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as tmp:
         tmp.write(prompt)
         prompt_file = tmp.name
 
     out, rc = run_cmd(
-        f'bash -l -c \'gemini -p "$(cat {shlex.quote(prompt_file)})"\'',
+        f'bash -l -c \'gemini -p - < {shlex.quote(prompt_file)}\'',
         timeout=45,
     )
     os.unlink(prompt_file)
