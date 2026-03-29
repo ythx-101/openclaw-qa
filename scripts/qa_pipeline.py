@@ -20,6 +20,7 @@ import re
 import time
 from pathlib import Path
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 
 # Paths
@@ -244,7 +245,7 @@ def process_tweet(url):
         "total_replies": len(replies),
         "qa_count": len(qa_pairs),
         "qa_pairs": qa_pairs,
-        "generated_at": datetime.utcnow().isoformat(),
+        "generated_at": datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(),
     }
 
 
@@ -272,7 +273,7 @@ def main():
             all_results.append(result)
 
     output_data = {
-        "generated_at": datetime.utcnow().isoformat(),
+        "generated_at": datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(),
         "total_tweets": len(urls),
         "total_qa": sum(r["qa_count"] for r in all_results),
         "tweets": all_results,

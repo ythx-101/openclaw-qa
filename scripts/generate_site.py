@@ -8,6 +8,7 @@ import sys
 import re
 from pathlib import Path
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 
 HTML_TEMPLATE = """<!DOCTYPE html>
@@ -287,7 +288,7 @@ def generate_html(data):
     if not content_parts:
         content_parts.append('<div class="empty">暂无问答内容</div>')
 
-    now = datetime.utcnow()
+    now = datetime.now(ZoneInfo("Asia/Shanghai"))
     html = HTML_TEMPLATE
     html = html.replace("{total_qa}", str(data.get("total_qa", 0)))
     html = html.replace("{total_tweets}", str(data.get("total_tweets", 0)))

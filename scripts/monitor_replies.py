@@ -12,6 +12,7 @@ import argparse
 import urllib.request
 import time
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from typing import Optional, Dict, List, Any
 from pathlib import Path
 
@@ -225,7 +226,7 @@ def monitor_tweet(
         "tweet_url": url,
         "username": username,
         "tweet_id": tweet_id,
-        "checked_at": datetime.utcnow().isoformat(),
+        "checked_at": datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(),
     }
 
     replies = fetch_replies_via_camofox(
