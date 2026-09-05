@@ -1225,81 +1225,75 @@
 <div id="deck">
 
 
-<!-- ============ 01 · cover · S01 ============ -->
-<section class="slide accent" data-animate="hero" data-slide-id="cover" data-layout="S01">
+<!-- ============ 01 · cover · SWISS-COVER-ASCII ============ -->
+<section class="slide accent" data-animate="hero" data-slide-id="cover" data-layout="SWISS-COVER-ASCII">
   <div class="canvas-card">
     <canvas class="ascii-bg" aria-hidden="true"></canvas>
-    <div class="chrome-min">
+    <div class="chrome-min" style="text-transform:none">
       <div class="l">Grok Bot 分享会 · yulin807</div>
       <div class="r">杭州 · 01 / 12</div>
     </div>
     <div style="flex:1;padding:0;display:grid;grid-template-rows:auto 1fr auto;gap:2.6vh">
-      <div data-anim="kicker" class="t-meta" style="color:rgba(255,255,255,.78);letter-spacing:.22em">@yulin807 · 三帖 · @poteto dr eggbot</div>
+      <div data-anim="kicker" class="t-meta" style="color:rgba(255,255,255,.78);letter-spacing:.22em;text-transform:none">yulin807 · dr eggbot · 三帖实录</div>
       <h1 data-anim="title" style="align-self:start;font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(6.4vw,11.2vh);line-height:.96;letter-spacing:-.025em;color:#fff;margin-top:6vh">蛋·bot 不是一句<br/><span style="font-style:italic;font-weight:300">提示词</span></h1>
       <div data-anim="bottom" style="display:grid;grid-template-rows:auto auto;gap:1.6vh;border-top:1px solid rgba(255,255,255,.22);padding-top:2vh">
-        <div data-anim="lead" class="lead" style="max-width:58ch;color:rgba(255,255,255,.86);font-weight:300">yulin807 的三帖，和 @poteto 的 dr eggbot 公开可恢复配置<br/>环境 → 元 bot → 交接</div>
+        <div data-anim="lead" class="lead" style="max-width:58ch;color:rgba(255,255,255,.9);font-weight:300">一个帮你创建 Grok Bot 的 bot<br/><span style="color:rgba(255,255,255,.7)">环境 → 角色配置 → 消息交接</span></div>
         <div style="display:flex;justify-content:space-between;align-items:end">
-          <div class="t-meta" style="color:rgba(255,255,255,.68);max-width:62ch;line-height:1.6">10–15 MIN · 杭州市西湖区古天巷8号<br/>云州国际2号楼C座15楼</div>
-          <div class="t-meta" style="color:rgba(255,255,255,.6)">→ swipe / arrow keys</div>
+          <div class="t-meta" style="color:rgba(255,255,255,.68);line-height:1.6;text-transform:none">Grok Bot 分享会 · 杭州</div>
+          <div class="t-meta" style="color:rgba(255,255,255,.6);text-transform:none">yulin807 · 10–15 min</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ 02 · hook-timeline · S02 ============ -->
-<section class="slide" data-animate="progression" data-slide-id="hook-timeline" data-layout="S02">
+<!-- ============ 02 · hook-timeline · S11 ============ -->
+<section class="slide light" data-animate="timeline-walk" data-slide-id="hook-timeline" data-layout="S11">
   <div class="canvas-card">
     <div class="chrome-min">
       <div class="l">蛋·bot · Field Note</div>
       <div class="r">02 / 12</div>
     </div>
-    <div style="flex:1;padding:0;display:grid;grid-template-rows:auto 1fr auto;gap:2.4vh;min-height:0">
+    <div style="flex:1;padding:0;display:grid;grid-template-rows:auto 1fr auto;gap:3vh;min-height:0;padding-bottom:6.5vh">
       <div data-anim="line" style="display:flex;flex-direction:column;gap:1.2vh">
         <div class="t-meta">2026 · UTC · Context</div>
         <h2 class="h-xl-zh" style="font-size:min(5.8vw,10.2vh);font-weight:200;letter-spacing:-.025em;line-height:.96">三帖一条线</h2>
-        <p class="lead" style="max-width:48ch;font-weight:300;color:var(--text-secondary)">从滚球兽到亚古兽，不是口号——有坐标</p>
+        <p class="lead" style="max-width:48ch;font-weight:300;color:var(--text-secondary)">环境 → 角色配置 → 消息交接</p>
       </div>
-      <div class="timeline-v" data-anim="up" style="margin-top:0">
-        <div class="tl-node">
-          <span class="dot"></span>
-          <span class="yr">8/28</span>
-          <span class="multi">I</span>
-          <p class="desc">介绍篇 I · 云电脑——bot 能操作，人也能接管</p>
-        </div>
-        <div class="tl-node accent">
-          <span class="dot"></span>
-          <span class="yr">8/31</span>
-          <span class="multi">II</span>
-          <p class="desc">介绍篇 II · 元 bot 四件套——指令 / memory / skill / 插件</p>
-        </div>
-        <div class="tl-node">
-          <span class="dot"></span>
-          <span class="yr">9/2</span>
-          <span class="multi">交</span>
-          <p class="desc">交接帖 · 调度 ↔ 幕僚长——动作名是「发消息」</p>
+      <div class="timeline-h" data-anim="up" style="margin-top:0;min-height:34vh">
+        <div class="tl-row" style="grid-template-columns:repeat(3,1fr)">
+          <div class="th-node up">
+            <span class="dot"></span>
+            <div class="label" style="width:22vw">
+              <span class="yr">2026-08-28</span>
+              <span class="name">云电脑环境</span>
+              <span class="desc" style="font-size:max(16px,.9vw)">bot 能运行任务，人能接管</span>
+            </div>
+          </div>
+          <div class="th-node down accent">
+            <span class="dot"></span>
+            <div class="label" style="width:22vw">
+              <span class="yr">2026-08-31</span>
+              <span class="name">角色配置</span>
+              <span class="desc" style="font-size:max(16px,.9vw)">指令 / memory / Skills / 插件</span>
+            </div>
+          </div>
+          <div class="th-node up">
+            <span class="dot"></span>
+            <div class="label" style="width:22vw">
+              <span class="yr">2026-09-02</span>
+              <span class="name">消息交接</span>
+              <span class="desc" style="font-size:max(16px,.9vw)">调度 ↔ 幕僚长</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="kpi-row-4" data-anim="kpi">
-        <div class="kpi-cell">
-          <div class="lbl">Yu</div>
-          <div class="nb" style="font-size:max(18px,1.6vw);font-weight:300">grok 跳过</div>
-          <div class="note">open claw / Hermes / Codex → 下一代 Agent</div>
-        </div>
-        <div class="kpi-cell">
-          <div class="lbl">POST 01</div>
-          <div class="nb" style="font-size:max(16px,1.1vw);font-weight:400;letter-spacing:-.01em">…693495</div>
-          <div class="note">x.com/YuLin807</div>
-        </div>
-        <div class="kpi-cell">
-          <div class="lbl">POST 02</div>
-          <div class="nb" style="font-size:max(16px,1.1vw);font-weight:400;letter-spacing:-.01em">…371616</div>
-          <div class="note">元 bot 四件套</div>
-        </div>
-        <div class="kpi-cell">
-          <div class="lbl">POST 03</div>
-          <div class="nb" style="font-size:max(16px,1.1vw);font-weight:400;letter-spacing:-.01em">…625112</div>
-          <div class="note">发消息交接</div>
+      <div data-anim="sources" style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border-subtle);padding-top:1.8vh;gap:2vw">
+        <div class="t-body-sm">三帖不是功能清单：每一帖都把下一步的角色关系说得更具体。</div>
+        <div class="t-meta" style="display:flex;gap:1.4vw;white-space:nowrap">
+          <a href="https://x.com/YuLin807/status/2093422509416923495" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:none">8/28 原帖 ↗</a>
+          <a href="https://x.com/YuLin807/status/2094440320180371616" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:none">8/31 原帖 ↗</a>
+          <a href="https://x.com/YuLin807/status/2095147915744625112" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:none">9/2 原帖 ↗</a>
         </div>
       </div>
     </div>
@@ -1315,9 +1309,9 @@
     </div>
     <div data-anim="up" style="flex:1;display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:2.4vw;align-items:start;min-height:0;padding-top:1vh">
       <div>
-        <div class="t-meta" style="margin-bottom:1.6vh">Tech Spec</div>
+        <div class="t-meta" style="margin-bottom:1.6vh">8/28 使用记录</div>
         <div style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.2vw,9.2vh);line-height:.96;letter-spacing:-.025em">这是一台<br/>电脑</div>
-        <div style="margin-top:2vh;font-size:max(16px,.94vw);line-height:1.55;color:rgba(255,255,255,.78);font-weight:400;max-width:28ch">bot 能操作，人也能接管。规格上屏，先建立「环境」而不是「聊天框」。</div>
+        <div style="margin-top:2vh;font-size:max(18px,1vw);line-height:1.55;color:rgba(255,255,255,.82);font-weight:400;max-width:24ch">bot 能运行任务，<br/>你也能接管。</div>
       </div>
       <div>
         <div style="height:2px;background:var(--accent);margin-bottom:1.6vh"></div>
@@ -1338,19 +1332,14 @@
         <div class="t-body-sm" style="margin-top:1.2vh;color:rgba(255,255,255,.7)">Debian · 图形模式</div>
       </div>
     </div>
-    <div data-anim="hero" style="display:grid;grid-template-columns:auto 1fr auto;gap:3vw;align-items:end;border-top:1px solid rgba(255,255,255,.18);padding-top:2vh;margin-top:auto">
-      <div class="bottom-hero">
-        <div class="t-meta">Analogy</div>
-        <div style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(2.8vw,5vh);letter-spacing:-.02em;margin-top:.6vh">Mac mini · iPhone 16e</div>
+    <div data-anim="hero" style="display:grid;grid-template-columns:1fr 1fr auto;gap:3vw;align-items:end;border-top:1px solid rgba(255,255,255,.18);padding-top:2vh;margin-top:2vh;margin-bottom:6.5vh">
+      <div>
+        <div class="t-meta">RUN</div>
+        <div class="t-body" style="margin-top:.6vh;color:rgba(255,255,255,.86)">任务在电脑环境中运行</div>
       </div>
-      <div style="display:flex;flex-direction:column;gap:1vh">
-        <div style="height:1px;background:var(--accent);width:40%"></div>
-        <div class="t-body-sm" style="color:rgba(255,255,255,.72)">免费额度 · 可用 X 会员登录 · 登录态所有 Bot 共用 · 幕僚长补充：没独显</div>
-        <div style="display:flex;gap:1vw;flex-wrap:wrap">
-          <span class="tag" style="border-color:rgba(255,255,255,.35);color:rgba(255,255,255,.8)">Debian GUI</span>
-          <span class="tag" style="border-color:rgba(255,255,255,.35);color:rgba(255,255,255,.8)">No discrete GPU</span>
-          <span class="tag" style="border-color:rgba(255,255,255,.35);color:rgba(255,255,255,.8)">Shared session</span>
-        </div>
+      <div>
+        <div class="t-meta">TAKE OVER</div>
+        <div class="t-body" style="margin-top:.6vh;color:rgba(255,255,255,.86)">Debian 图形界面可人工接管</div>
       </div>
       <div data-anim="bars" style="display:flex;align-items:flex-end;gap:.45vw;height:12vh">
         <div class="vbar" style="width:6px;height:40%;background:rgba(255,255,255,.25)"></div>
@@ -1363,12 +1352,13 @@
         <div class="vbar" style="width:6px;height:75%;background:rgba(255,255,255,.4)"></div>
         <div class="vbar" style="width:6px;height:60%;background:rgba(255,255,255,.32)"></div>
       </div>
+      <a href="https://x.com/YuLin807/status/2093422509416923495" target="_blank" rel="noreferrer" class="t-meta" style="grid-column:1 / -1;color:rgba(255,255,255,.62);text-decoration:none;margin-top:1vh">来源：8/28 使用记录 ↗ · 规格不代表所有用户固定配置</a>
     </div>
   </div>
 </section>
 
 <!-- ============ 04 · core-playbook · S19 ============ -->
-<section class="slide" data-animate="four-cards" data-slide-id="core-playbook" data-layout="S19">
+<section class="slide light" data-animate="four-cards" data-slide-id="core-playbook" data-layout="S19">
   <div class="canvas-card">
     <div class="chrome-min">
       <div class="l">介绍篇 I · 玩法 3.1–3.4</div>
@@ -1377,95 +1367,65 @@
     <div data-anim="line" style="display:flex;flex-direction:column;gap:1.6vh">
       <div style="height:2px;width:80px;background:var(--accent)"></div>
       <div>
-        <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.8vw,10.2vh);line-height:.96;letter-spacing:-.025em">四套玩法</h2>
-        <p class="lead" style="margin-top:1.2vh;color:var(--text-secondary);font-weight:300">GitHub · device code · herdr · Moshi</p>
+        <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.8vw,10.2vh);line-height:.96;letter-spacing:-.025em">四种用法</h2>
+        <p class="lead" style="margin-top:1.2vh;color:var(--text-secondary);font-weight:300">这次重点只看 herdr：把工作分到不同 pane。</p>
       </div>
     </div>
     <div data-anim="up" style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:1.6vw;margin-top:3.2vh;min-height:0">
       <article class="card-fill" style="padding:2.4vh 1.4vw;display:flex;flex-direction:column;gap:1.4vh">
-        <div class="t-meta">— 3.1</div>
-        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:300;font-size:max(18px,1.6vw);letter-spacing:-.015em;line-height:1.2">同步 GitHub</h3>
-        <p class="t-body-sm" style="margin-top:auto">监督 issue，照看茶馆</p>
+        <div class="t-meta">01 · GITHUB</div>
+        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:300;font-size:max(18px,1.6vw);letter-spacing:-.015em;line-height:1.2">同步项目</h3>
+        <p class="t-body-sm">监督 issue，照看茶馆</p>
       </article>
       <article class="card-fill" style="padding:2.4vh 1.4vw;display:flex;flex-direction:column;gap:1.4vh">
-        <div class="t-meta">— 3.2</div>
-        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:300;font-size:max(18px,1.6vw);letter-spacing:-.015em;line-height:1.2">device code</h3>
-        <p class="t-body-sm" style="margin-top:auto">登 Codex / Grok（消耗额度）</p>
+        <div class="t-meta">02 · DEVICE CODE</div>
+        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:300;font-size:max(18px,1.6vw);letter-spacing:-.015em;line-height:1.2">授权登录</h3>
+        <p class="t-body-sm">连接 Codex / Grok</p>
       </article>
       <article class="card-accent" style="padding:2.4vh 1.4vw;display:flex;flex-direction:column;gap:1.4vh">
-        <div class="t-meta">— 3.3</div>
-        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:300;font-size:max(18px,1.6vw);letter-spacing:-.015em;line-height:1.2">herdr</h3>
-        <p class="t-body-sm" style="margin-top:auto;color:var(--accent-on)">同时控 grok 与 Codex</p>
+        <div class="t-meta">03 · HERDR</div>
+        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:300;font-size:max(18px,1.6vw);letter-spacing:-.015em;line-height:1.2">并行调度</h3>
+        <p class="t-body-sm" style="color:var(--accent-on)">不同 pane 分担工作</p>
       </article>
       <article class="card-fill" style="padding:2.4vh 1.4vw;display:flex;flex-direction:column;gap:1.4vh">
-        <div class="t-meta">— 3.4</div>
-        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:300;font-size:max(18px,1.6vw);letter-spacing:-.015em;line-height:1.2">Moshi</h3>
-        <p class="t-body-sm" style="margin-top:auto">moshi-hook + Tailscale Easy Pair，手机远程控</p>
+        <div class="t-meta">04 · MOSHI</div>
+        <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:300;font-size:max(18px,1.6vw);letter-spacing:-.015em;line-height:1.2">手机接管</h3>
+        <p class="t-body-sm">moshi-hook + Tailscale Easy Pair</p>
       </article>
     </div>
-    <div class="t-meta" style="margin-top:2vh">moshi-hook · getmoshi.app/docs · 没公网走 Tailscale · 不要开 Tailscale SSH · 版本未确认</div>
+    <a href="https://x.com/YuLin807/status/2093422509416923495" target="_blank" rel="noreferrer" class="t-meta" style="margin:2vh 0 6.5vh;color:inherit;text-decoration:none">来源：8/28 使用记录 ↗ · 远程连接路径的当前适用条件未确认</a>
   </div>
 </section>
 
-<!-- ============ 05 · core-four-stack · S17 ============ -->
-<section class="slide hero dark" data-animate="system-diagram" data-slide-id="core-four-stack" data-layout="S17">
+<!-- ============ 05 · core-four-stack · S19 ============ -->
+<section class="slide dark" data-animate="four-cards" data-slide-id="core-four-stack" data-layout="S19">
   <div class="canvas-card">
     <div class="chrome-min">
       <div class="l">介绍篇 II · 2026-08-31</div>
       <div class="r">05 / 12</div>
     </div>
-    <div data-anim="line" style="display:grid;grid-template-columns:1fr 1.2fr;gap:3vw;align-items:end">
-      <div>
-        <div class="t-meta" style="margin-bottom:1.2vh">Four Stack</div>
-        <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.2vw,9.2vh);line-height:.96;letter-spacing:-.025em">一个 bot<br/>四件套</h2>
-      </div>
-      <p class="t-body" style="color:rgba(255,255,255,.78);max-width:42ch">指令 · memory · skill · 插件。导入 = 复制整套配置。Yu：「你只是需要导入，『偷走』别人 bot 的配置就可以了」</p>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1.2vh">
+      <div class="t-meta">Four-part configuration</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.2vw,9.2vh);line-height:.96;letter-spacing:-.025em">配置分四类</h2>
+      <p class="lead" style="color:rgba(255,255,255,.76);font-weight:300">这份案例的公开材料整理；实际导入覆盖范围未确认。</p>
     </div>
-    <div data-anim="up" style="flex:1;display:grid;grid-template-rows:1fr auto;gap:2.4vh;min-height:0;margin-top:2.4vh">
-      <div style="display:grid;grid-template-columns:auto 1fr;gap:3vw;align-items:center;min-height:0">
-        <svg viewBox="0 0 240 240" width="28vh" height="28vh" aria-hidden="true" style="justify-self:center">
-          <circle cx="120" cy="120" r="108" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1"/>
-          <circle cx="120" cy="120" r="82" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="1"/>
-          <circle cx="120" cy="120" r="56" fill="none" stroke="rgba(255,107,53,.7)" stroke-width="1.5"/>
-          <circle cx="120" cy="120" r="28" fill="var(--accent)"/>
-        </svg>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2vh 1.6vw">
-          <div class="card-accent" style="padding:1.8vh 1.4vw">
-            <div class="t-meta">01 · CORE</div>
-            <div style="font-size:max(18px,1.5vw);font-weight:300;margin-top:.6vh">指令</div>
-            <div class="t-body-sm" style="margin-top:.8vh;color:var(--accent-on)">角色与职责</div>
-          </div>
-          <div class="card-fill" style="padding:1.8vh 1.4vw;background:rgba(255,255,255,.08);color:var(--paper)">
-            <div class="t-meta">02 · MEMORY</div>
-            <div style="font-size:max(18px,1.5vw);font-weight:300;margin-top:.6vh">memory</div>
-            <div class="t-body-sm" style="margin-top:.8vh;color:rgba(255,255,255,.75)">工作流程与法则</div>
-          </div>
-          <div class="card-fill" style="padding:1.8vh 1.4vw;background:rgba(255,255,255,.08);color:var(--paper)">
-            <div class="t-meta">03 · SKILL</div>
-            <div style="font-size:max(18px,1.5vw);font-weight:300;margin-top:.6vh">skill</div>
-            <div class="t-body-sm" style="margin-top:.8vh;color:rgba(255,255,255,.75)">memory 里的工具在此定义</div>
-          </div>
-          <div class="card-fill" style="padding:1.8vh 1.4vw;background:rgba(255,255,255,.08);color:var(--paper)">
-            <div class="t-meta">04 · PLUGIN</div>
-            <div style="font-size:max(18px,1.5vw);font-weight:300;margin-top:.6vh">插件</div>
-            <div class="t-body-sm" style="margin-top:.8vh;color:rgba(255,255,255,.75)">图中是 pstack</div>
-          </div>
-        </div>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2vw;border-top:1px solid rgba(255,255,255,.18);padding-top:1.6vh">
-        <div>
-          <div class="t-meta">Import</div>
-          <div class="t-body-sm" style="margin-top:.6vh;color:rgba(255,255,255,.78)">开箱即用才是路线</div>
-        </div>
-        <div>
-          <div class="t-meta">Sticky</div>
-          <div class="t-body-sm" style="margin-top:.6vh;color:rgba(255,255,255,.78)">插件可能绑定 grok bot 生态</div>
-        </div>
-        <div>
-          <div class="t-meta">Next</div>
-          <div class="t-body-sm" style="margin-top:.6vh;color:rgba(255,255,255,.78)">「指令」是中文意译——下一页放英文原句</div>
-        </div>
-      </div>
+    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5vw;min-height:0;margin-top:3.2vh;align-items:stretch">
+      <article class="card-fill" style="padding:2.2vh 1.4vw;background:rgba(255,255,255,.08);color:var(--paper);display:flex;flex-direction:column;gap:1.2vh">
+        <div class="t-meta">01 · INSTRUCTION</div><h3 style="font-size:max(20px,1.65vw);font-weight:300">指令</h3><p class="t-body-sm" style="color:rgba(255,255,255,.78)">角色与职责</p>
+      </article>
+      <article class="card-fill" style="padding:2.2vh 1.4vw;background:rgba(255,255,255,.08);color:var(--paper);display:flex;flex-direction:column;gap:1.2vh">
+        <div class="t-meta">02 · MEMORY</div><h3 style="font-size:max(20px,1.65vw);font-weight:300">memory</h3><p class="t-body-sm" style="color:rgba(255,255,255,.78)">记住的流程与偏好</p>
+      </article>
+      <article class="card-fill" style="padding:2.2vh 1.4vw;background:rgba(255,255,255,.08);color:var(--paper);display:flex;flex-direction:column;gap:1.2vh">
+        <div class="t-meta">03 · SKILLS</div><h3 style="font-size:max(20px,1.65vw);font-weight:300">Skills</h3><p class="t-body-sm" style="color:rgba(255,255,255,.78)">处理特定任务的做法</p>
+      </article>
+      <article class="card-fill" style="padding:2.2vh 1.4vw;background:rgba(255,255,255,.08);color:var(--paper);display:flex;flex-direction:column;gap:1.2vh">
+        <div class="t-meta">04 · PLUGIN</div><h3 style="font-size:max(20px,1.65vw);font-weight:300">插件</h3><p class="t-body-sm" style="color:rgba(255,255,255,.78)">本例插件：pstack</p>
+      </article>
+    </div>
+    <div data-anim="foot" style="display:flex;justify-content:space-between;gap:2vw;border-top:1px solid rgba(255,255,255,.18);padding-top:1.6vh;margin:2vh 0 6.5vh">
+      <div class="t-body-sm" style="color:rgba(255,255,255,.78)">P08 的首次导入记录显示：三个 Skills 当时需在 App 补加。</div>
+      <a href="https://x.com/YuLin807/status/2094440320180371616" target="_blank" rel="noreferrer" class="t-meta" style="color:rgba(255,255,255,.62);text-decoration:none;white-space:nowrap">8/31 原帖 ↗</a>
     </div>
   </div>
 </section>
@@ -1479,143 +1439,132 @@
           <div class="l">06 / 12</div>
           <div class="r">DR EGGBOT</div>
         </div>
-        <div data-anim="manifesto" style="display:flex;flex-direction:column;gap:1.6vh;flex:1;justify-content:center">
-          <div class="t-meta" style="color:rgba(255,255,255,.7)">English description · full</div>
-          <p style="font-family:var(--sans);font-weight:300;font-size:max(16px,1.05vw);line-height:1.55;color:rgba(255,255,255,.92);letter-spacing:-.01em">Designs high-quality Grok Bots. Asks a few preference questions, then creates them with CreateAgent. Coding bots get the poteto-mode bar (one job, unslopped, verified). Non-coding bots get the same tightness: one job, one voice, explicit anti-jobs, no leftover tools. Casual, a little mad-scientist, short lowercase. Bias to act once the job is clear. Does not default to shareable templates.</p>
+        <div data-anim="manifesto" style="display:flex;flex-direction:column;gap:2.2vh;flex:1;justify-content:center">
+          <div class="t-meta" style="color:rgba(255,255,255,.7)">公开 description 的中文概括</div>
+          <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.2vw,9.2vh);line-height:.96;letter-spacing:-.025em;color:#fff">先定义<br/>角色</h2>
+          <div style="display:flex;flex-direction:column;gap:1.2vh;border-top:1px solid rgba(255,255,255,.22);padding-top:2vh">
+            <div style="font-size:max(20px,1.7vw);font-weight:300">一件事</div>
+            <div style="font-size:max(20px,1.7vw);font-weight:300">一种口吻</div>
+            <div style="font-size:max(20px,1.7vw);font-weight:300;color:var(--accent-bright)">明确不做什么</div>
+          </div>
         </div>
-        <div class="t-meta" style="color:rgba(255,255,255,.55);border-top:1px solid rgba(255,255,255,.18);padding-top:1.6vh">x.ai/bot/marketplace/bots/dr-eggbot-v2</div>
+        <a href="https://x.ai/bot/marketplace/bots/dr-eggbot-v2" target="_blank" rel="noreferrer" class="t-meta" style="color:rgba(255,255,255,.55);border-top:1px solid rgba(255,255,255,.18);padding-top:1.6vh;text-decoration:none">公开市场页 ↗</a>
       </div>
       <div class="half b-grey" style="padding:5.6vh 3.6vw 4.4vh;justify-content:space-between">
         <div class="chrome-min tight">
           <div class="l">By Lauren Tan / @poteto</div>
           <div class="r">推文原截图</div>
         </div>
-        <div data-anim="rules" style="display:grid;grid-template-columns:1fr .78fr;gap:1.8vw;align-items:start;flex:1;min-height:0">
-          <div style="display:flex;flex-direction:column;gap:1.4vh">
-            <div class="t-meta accent">公开可恢复 · 非完整原配置</div>
-            <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(3.3vw,5.8vh);line-height:1.04;letter-spacing:-.02em">英文原<br/>description</h2>
-            <ul style="list-style:none;display:flex;flex-direction:column;gap:1vh;margin-top:.6vh">
-              <li class="t-body-sm">设计 Grok Bot · 问偏好 · CreateAgent</li>
-              <li class="t-body-sm">one job · one voice · explicit anti-jobs</li>
-              <li class="t-body-sm">短小写 · 偏行动 · 不默认出分享模板</li>
-            </ul>
-            <div class="t-meta" style="margin-top:auto;line-height:1.55">原生指令 / Memories 全文与准确版本号：未确认</div>
-          </div>
+        <div data-anim="rules" style="display:grid;grid-template-columns:.9fr 1.1fr;gap:1.8vw;align-items:start;flex:1;min-height:0">
           <figure class="tile" style="min-width:0">
-            <div class="frame-img fit-contain" style="height:53vh;background:#fff">
+            <div class="frame-img fit-contain" style="height:50vh;background:#fff">
               <img src="images/06-eggbot-card.jpg" data-image-slot="s03-evidence-vertical" alt="推文中的 dr eggbot 详情页原截图" />
             </div>
-            <figcaption class="swiss-img-caption" style="display:block"><strong>dr eggbot</strong><br/>推文原截图 · 保留原样</figcaption>
+            <figcaption class="swiss-img-caption" style="display:block"><strong>dr eggbot</strong><br/>原截图 · fit-contain</figcaption>
           </figure>
+          <div style="display:flex;flex-direction:column;gap:1.4vh">
+            <div class="t-meta accent">公开名片 description</div>
+            <p class="t-body">先问偏好，再用 CreateAgent 创建 bot。</p>
+            <p class="t-body-sm">one job / one voice / explicit anti-jobs 是公开简介里的角色原则。</p>
+            <div class="rule" style="margin:1vh 0"></div>
+            <div class="t-meta" style="line-height:1.55">公开简介可见；未展开的“指令”项、Memories / Skills 正文与准确安装版本：未确认</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ 07 · core-skills-pstack · S13 ============ -->
-<section class="slide dark" data-animate="three-forces" data-slide-id="core-skills-pstack" data-layout="S13">
+<!-- ============ 07 · core-skills-pstack · S16 ============ -->
+<section class="slide dark" data-animate="field-notes" data-slide-id="core-skills-pstack" data-layout="S16">
   <div class="canvas-card">
     <div class="chrome-min">
-      <div class="l">截图可见一行简介 · 正文未见</div>
+      <div class="l">可见名称与部分简介 · 完整正文未确认</div>
       <div class="r">07 / 12</div>
     </div>
-    <div data-anim="line" style="margin-bottom:2vh">
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh">
       <div class="t-meta">Three Skills · One Plugin</div>
-      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.2vw,9.2vh);line-height:.96;letter-spacing:-.025em;margin-top:1vh">三个 skill · 一个插件</h2>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.2vw,9.2vh);line-height:.96;letter-spacing:-.025em">三个 Skills · 一个插件</h2>
     </div>
-    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:1fr 1fr .82fr;gap:1.5vw;min-height:0;align-items:start">
-      <figure class="tile" style="min-width:0">
-        <div class="frame-img pos-top" style="height:51vh;background:#fff">
-          <img src="images/07-skills.jpg" data-image-slot="s13-evidence-vertical-a" alt="推文里的 Skills 列表原截图" />
-        </div>
-        <figcaption class="swiss-img-caption" style="color:rgba(255,255,255,.58);border-color:rgba(255,255,255,.18)"><strong style="color:#fff">3 Skills</strong><span>原截图</span></figcaption>
-      </figure>
-      <figure class="tile" style="min-width:0">
-        <div class="frame-img pos-top" style="height:51vh;background:#fff">
-          <img src="images/07-pstack.jpg" data-image-slot="s13-evidence-vertical-b" alt="推文里的 pstack 插件原截图" />
-        </div>
-        <figcaption class="swiss-img-caption" style="color:rgba(255,255,255,.58);border-color:rgba(255,255,255,.18)"><strong style="color:#fff">pstack</strong><span>原截图</span></figcaption>
-      </figure>
-      <aside class="card-ink" style="padding:2.2vh 1.5vw;display:flex;flex-direction:column;gap:1.4vh;min-height:51vh;position:relative;overflow:hidden">
-        <div class="dot-mat" style="position:absolute;right:-4vw;bottom:-3vh;width:18vw;height:18vw;opacity:.2;color:#fff"></div>
-        <div class="t-cat on-dark">What is visible</div>
-        <div style="font-family:var(--sans);font-weight:200;font-size:min(2.4vw,4.2vh);line-height:1.08;letter-spacing:-.02em;position:relative">three skills<br/><span style="color:var(--accent)">+ pstack</span></div>
-        <div style="display:flex;flex-direction:column;gap:1.05vh;position:relative">
-          <div class="t-body-sm" style="color:rgba(255,255,255,.78)">design-grok-bot</div>
-          <div class="t-body-sm" style="color:rgba(255,255,255,.78)">Make Bot UI</div>
-          <div class="t-body-sm" style="color:rgba(255,255,255,.78)">Cheap routines</div>
-          <div class="rule" style="background:rgba(255,255,255,.35);margin:.4vh 0"></div>
-          <p class="t-body-sm" style="color:rgba(255,255,255,.78)">go fast, go deep first.</p>
-        </div>
-        <div class="t-meta" style="margin-top:auto;position:relative;line-height:1.55">截图简介有截断；完整 SKILL.md 未确认，不补写</div>
-      </aside>
+    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,minmax(0,1fr));gap:1.4vh 1.2vw;min-height:0;margin:3vh 0 6.5vh">
+      <article class="card-fill" style="padding:1.8vh 1.2vw;display:flex;flex-direction:column;gap:.8vh">
+        <div class="t-meta" style="color:var(--text-helper)">01 · SKILL</div><h3 style="font-size:max(18px,1.35vw);font-weight:400">design-grok-bot</h3><p class="t-body-sm" style="margin-top:auto;color:var(--text-secondary)">设计 bot · 简介概括</p>
+      </article>
+      <article class="card-fill" style="padding:1.8vh 1.2vw;display:flex;flex-direction:column;gap:.8vh">
+        <div class="t-meta" style="color:var(--text-helper)">02 · SKILL</div><h3 style="font-size:max(18px,1.35vw);font-weight:400">Make Bot UI</h3><p class="t-body-sm" style="margin-top:auto;color:var(--text-secondary)">制作 UI · 简介概括</p>
+      </article>
+      <a href="images/07-skills.jpg" target="_blank" rel="noreferrer" class="card-fill" style="padding:1.2vh;display:grid;grid-template-columns:42% 1fr;gap:1vw;text-decoration:none;color:var(--ink);min-width:0">
+        <div class="frame-img fit-contain" style="height:20vh;background:#fff"><img src="images/07-skills.jpg" data-image-slot="s16-brief-original-skills" alt="完整的三个 Skills 列表原截图" /></div>
+        <div style="display:flex;flex-direction:column;gap:.8vh"><div class="t-meta" style="color:var(--text-helper)">原截图 ↗</div><p class="t-body-sm" style="color:var(--text-secondary)">完整保留三项；包含 Cheap routines。</p></div>
+      </a>
+      <article class="card-fill" style="padding:1.8vh 1.2vw;display:flex;flex-direction:column;gap:.8vh">
+        <div class="t-meta" style="color:var(--text-helper)">03 · SKILL</div><h3 style="font-size:max(18px,1.35vw);font-weight:400">Cheap routines</h3><p class="t-body-sm" style="margin-top:auto;color:var(--text-secondary)">例行任务 · 简介概括</p>
+      </article>
+      <article class="card-accent" style="padding:1.8vh 1.2vw;display:flex;flex-direction:column;gap:.8vh">
+        <div class="t-meta">PLUGIN · PSTACK</div><h3 style="font-size:max(18px,1.35vw);font-weight:400">编码工作流插件</h3><p class="t-body-sm" style="margin-top:auto;color:var(--accent-on)">不是“第四个 Skill”</p>
+      </article>
+      <a href="images/07-pstack.jpg" target="_blank" rel="noreferrer" class="card-fill" style="padding:1.2vh;display:grid;grid-template-columns:42% 1fr;gap:1vw;text-decoration:none;color:var(--ink);min-width:0">
+        <div class="frame-img fit-contain" style="height:20vh;background:#fff"><img src="images/07-pstack.jpg" data-image-slot="s16-brief-original-pstack" alt="pstack 插件原截图" /></div>
+        <div style="display:flex;flex-direction:column;gap:.8vh"><div class="t-meta" style="color:var(--text-helper)">原截图 ↗</div><p class="t-body-sm" style="color:var(--text-secondary)">名称与简介可见；效果主张未独立验证。</p></div>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- ============ 08 · core-first-import · S11 ============ -->
-<section class="slide" data-animate="timeline-walk" data-slide-id="core-first-import" data-layout="S11">
+<section class="slide light" data-animate="timeline-walk" data-slide-id="core-first-import" data-layout="S11">
   <div class="canvas-card">
     <div class="chrome-min">
-      <div class="l">元·bot 首次加载 · 引用链 9/2</div>
+      <div class="l">9/2 首次导入记录</div>
       <div class="r">08 / 12</div>
     </div>
-    <div data-anim="line" style="display:grid;grid-template-columns:auto 1fr;gap:3vw;align-items:end">
-      <div>
-        <div class="t-meta" style="margin-bottom:1.2vh">First Import</div>
-        <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.8vw,10.2vh);line-height:.96;letter-spacing:-.025em">拿到就先装齐</h2>
-      </div>
-      <p class="lead" style="color:var(--text-secondary);font-weight:300;max-width:36ch">插件 → 记忆 → skill → /setup-pstack</p>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1.2vh">
+      <div class="t-meta">First setup</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.2vw,9.2vh);line-height:.96;letter-spacing:-.025em">首次配置，有指引</h2>
+      <p class="lead" style="color:var(--text-secondary);font-weight:300;max-width:48ch">有下一步，也有需要手动补加的边界。</p>
     </div>
     <div class="timeline-h" data-anim="up" style="margin-top:2vh">
       <div class="tl-row" style="grid-template-columns:repeat(4,1fr)">
-        <div class="th-node up accent">
-          <span class="dot"></span>
-          <div class="label">
-            <span class="yr">01</span>
-            <span class="name">插件 pstack</span>
-            <span class="desc">加载插件</span>
-          </div>
-        </div>
-        <div class="th-node down">
-          <span class="dot"></span>
-          <div class="label">
-            <span class="yr">02</span>
-            <span class="name">书写记忆</span>
-            <span class="desc">memory</span>
-          </div>
-        </div>
         <div class="th-node up">
           <span class="dot"></span>
-          <div class="label">
-            <span class="yr">03</span>
-            <span class="name">三个 skill</span>
-            <span class="desc">形成 skill</span>
+          <div class="label" style="width:19vw">
+            <span class="yr">01</span>
+            <span class="name">检查配置</span>
+            <span class="desc" style="font-size:max(16px,.9vw)">记忆已写入（回执）</span>
           </div>
         </div>
         <div class="th-node down accent">
           <span class="dot"></span>
-          <div class="label">
+          <div class="label" style="width:19vw">
+            <span class="yr">02</span>
+            <span class="name">提示补 Skills</span>
+            <span class="desc" style="font-size:max(16px,.9vw)">未能保存；缺少时在 App 补加</span>
+          </div>
+        </div>
+        <div class="th-node up">
+          <span class="dot"></span>
+          <div class="label" style="width:19vw">
+            <span class="yr">03</span>
+            <span class="name">安装 pstack</span>
+            <span class="desc" style="font-size:max(16px,.9vw)">当时回报：含 45 个 skills</span>
+          </div>
+        </div>
+        <div class="th-node down">
+          <span class="dot"></span>
+          <div class="label" style="width:19vw">
             <span class="yr">04</span>
-            <span class="name">/setup-pstack</span>
-            <span class="desc">可选 healthcheck</span>
+            <span class="name">选择模型继承</span>
+            <span class="desc" style="font-size:max(16px,.9vw)">/setup-pstack · parent model everywhere</span>
           </div>
         </div>
       </div>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2vw;border-top:1px solid var(--border-subtle);padding-top:2vh;margin-top:auto">
-      <div>
-        <div class="t-meta">Evidence</div>
-        <div class="t-body-sm" style="margin-top:.6vh">本机装上 45 个 pstack skill</div>
-      </div>
-      <div>
-        <div class="t-meta">Model</div>
-        <div class="t-body-sm" style="margin-top:.6vh">Yu 选 parent model everywhere</div>
-      </div>
-      <div>
-        <div class="t-meta">Public update</div>
-        <div class="t-body-sm" style="margin-top:.6vh">@poteto · 2026-09-02 · 版本未确认</div>
+    <div data-anim="sources" style="display:flex;justify-content:space-between;gap:2vw;border-top:1px solid var(--border-subtle);padding-top:1.8vh;margin:2vh 0 6.5vh;align-items:start">
+      <div class="t-body-sm">三项 bot Skills 与“pstack 含 45 个 skills”是不同对象；后续补加结果未确认。</div>
+      <div class="t-meta" style="display:flex;gap:1.2vw;white-space:nowrap">
+        <a href="images/08-first-import-a.jpg" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:none">原图 A ↗</a>
+        <a href="images/08-first-import-b.jpg" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:none">原图 B ↗</a>
+        <a href="https://x.com/YuLin807/status/2095134845311816038" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:none">原帖 ↗</a>
       </div>
     </div>
   </div>
@@ -1625,139 +1574,109 @@
 <section class="slide grey" data-animate="duo-mirror" data-slide-id="core-spawn-diaodu" data-layout="S08">
   <div class="canvas-card">
     <div class="chrome-min">
-      <div class="l">蛋·bot 的第一个用途</div>
+      <div class="l">9/2 创建调度记录</div>
       <div class="r">09 / 12</div>
     </div>
     <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh">
       <div class="t-meta">CreateAgent · Role Split</div>
-      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.8vw,10.2vh);line-height:.96;letter-spacing:-.025em">已有幕僚长</h2>
-      <p class="lead" style="color:var(--text-secondary);font-weight:300">不克隆参谋 · 拆出调度</p>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.8vw,10.2vh);line-height:.96;letter-spacing:-.025em">保留幕僚长，拆出调度</h2>
+      <p class="lead" style="color:var(--text-secondary);font-weight:300">我的需求：找一个角色分派工作。</p>
     </div>
-    <div class="duo-compare" data-anim="up" style="margin-top:3vh">
+    <div class="duo-compare" data-anim="up" style="margin:3vh 0 6.5vh">
       <div class="col">
         <div class="col-tag"><span class="num">A</span> Keep</div>
         <h3 class="col-ttl">幕僚长</h3>
-        <p class="col-desc">已有「manage the other bots」。eggbot 识别出来，没有动统筹。</p>
-        <ul class="col-list">
-          <li>保留需要你拍板的决策</li>
-          <li>不克隆成第二个参谋</li>
-          <li>统筹仍在原角色</li>
+        <p class="col-desc">保留原有统筹，不再创建第二个参谋。</p>
+        <ul class="col-list" style="margin-top:1.4vh">
+          <li>继续负责统筹</li>
+          <li>需要你拍板的事仍找你</li>
         </ul>
       </div>
       <span class="vrule"></span>
       <div class="col accent">
         <div class="col-tag"><span class="num">B</span> Spawn</div>
         <h3 class="col-ttl">调度</h3>
-        <p class="col-desc">picking 调度. on-demand only. it routes, it does not do the work. 幕僚长 keeps decisions that need you.</p>
-        <ul class="col-list">
-          <li>one job is already clear: a coordinator over your grok bots, using herdr, so work fans out instead of burning one chat.</li>
-          <li>not a second chief of staff</li>
-          <li>管 VPS 上所有 Agent + herdr</li>
+        <p class="col-desc">新建按需分派角色，不替代幕僚长。</p>
+        <ul class="col-list" style="margin-top:1.4vh">
+          <li>通过 herdr 派活</li>
+          <li>按需唤醒</li>
         </ul>
       </div>
     </div>
+    <a href="https://x.com/YuLin807/status/2095140162112221541" target="_blank" rel="noreferrer" class="t-meta" style="position:absolute;right:5vw;bottom:8vh;color:var(--text-helper);text-decoration:none">创建调度记录 ↗</a>
   </div>
 </section>
 
 <!-- ============ 10 · core-diaodu-jobs · S12 ============ -->
-<section class="slide hero" data-animate="manifesto" data-slide-id="core-diaodu-jobs" data-layout="S12">
+<section class="slide hero light" data-animate="manifesto" data-slide-id="core-diaodu-jobs" data-layout="S12">
   <div class="canvas-card">
     <div class="chrome-min">
       <div class="l">按需唤醒 · 短中文</div>
       <div class="r">10 / 12</div>
     </div>
-    <div data-anim="line" style="display:grid;grid-template-columns:1.2fr .8fr;gap:3vw;align-items:start;flex:1">
-      <div>
-        <div class="t-cat" style="margin-bottom:1.4vh">One Job</div>
-        <div style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.8vw,10.2vh);line-height:.96;letter-spacing:-.025em">
-          路由，<br/>不干活
-        </div>
-        <div style="margin-top:2.4vh;font-size:max(18px,1.4vw);font-weight:300;line-height:1.4;max-width:28ch">
-          把活拆给 grok bot 与 herdr pane，等，合并，报告一次
-        </div>
-      </div>
-      <div style="padding-top:1.2vw">
-        <div class="t-meta" style="margin-bottom:1.2vh">拆 · 等 · 合并 · 报告一次</div>
-        <p class="t-body-sm">产品经理要带走的「明确拒绝」模板。勿与 eggbot 自身 anti-jobs 混。</p>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1.4vh;flex:1">
+      <div class="t-cat">One Job</div>
+      <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.8vw,10.2vh);line-height:.96;letter-spacing:-.025em">调度负责派活</h2>
+      <div style="margin-top:1vh;font-size:max(22px,1.8vw);font-weight:300;line-height:1.35">拆分 · 等待 · 合并 · 报告一次</div>
+      <div style="display:flex;justify-content:space-between;gap:2vw;margin-top:2vh;border-top:1px solid var(--border-subtle);padding-top:1.8vh">
+        <p class="t-body">按需唤醒；任务交给对应角色。</p>
+        <p class="t-body-sm" style="text-align:right">没有任务时保持安静<br/>是角色要求，不是零打扰保证。</p>
       </div>
     </div>
-    <div data-anim="up" style="margin:0 -5vw -4.4vh;background:var(--ink);color:var(--paper);padding:2.8vh 5vw 3.6vh;display:grid;grid-template-columns:auto 1fr;gap:3vw;align-items:center">
-      <div class="t-meta" style="color:rgba(255,255,255,.65)">Anti-jobs</div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.2vw 2vw">
-        <div class="t-body-sm" style="color:rgba(255,255,255,.88)">不写代码</div>
-        <div class="t-body-sm" style="color:rgba(255,255,255,.88)">不 one-shot grok -p</div>
-        <div class="t-body-sm" style="color:rgba(255,255,255,.88)">不 CreateAgent（那是 eggbot）</div>
-        <div class="t-body-sm" style="color:rgba(255,255,255,.88)">不调研 · 不收尾 · 不设计</div>
-        <div class="t-body-sm" style="color:rgba(255,255,255,.88)">不抢幕僚长</div>
-        <div class="t-body-sm" style="color:rgba(255,255,255,.88)">舰队空闲就闭嘴</div>
+    <div data-anim="up" style="margin:0 -5vw -4.4vh;background:var(--ink);color:var(--paper);padding:2.2vh 5vw 8.5vh;display:grid;grid-template-columns:auto 1fr;gap:3vw;align-items:start">
+      <div class="t-meta" style="color:rgba(255,255,255,.65)">调度的 anti-jobs</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2vw">
+        <div class="t-body-sm" style="color:rgba(255,255,255,.9)">不亲自写代码、调研、设计</div>
+        <div class="t-body-sm" style="color:rgba(255,255,255,.9)">不创建新 bot</div>
+        <div class="t-body-sm" style="color:rgba(255,255,255,.9)">不接管幕僚长的职责</div>
       </div>
+      <a href="https://x.com/YuLin807/status/2095140162112221541" target="_blank" rel="noreferrer" class="t-meta" style="grid-column:2;color:rgba(255,255,255,.58);text-decoration:none;margin-top:.4vh">来源：创建调度记录 ↗</a>
     </div>
   </div>
 </section>
 
-<!-- ============ 11 · shift-handoff · S14 ============ -->
-<section class="slide dark" data-animate="loop-form" data-slide-id="shift-handoff" data-layout="S14">
+<!-- ============ 11 · shift-handoff · S15 ============ -->
+<section class="slide dark" data-animate="matrix-fill" data-slide-id="shift-handoff" data-layout="S15">
   <div class="canvas-card">
     <div class="chrome-min">
-      <div class="l">交接帖 · 2026-09-02 · Agent 产品经理</div>
+      <div class="l">交接帖 · 2026-09-02</div>
       <div class="r">11 / 12</div>
     </div>
-    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh;margin-bottom:2vh">
-      <div class="t-meta">Handoff Loop</div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1vh">
+      <div class="t-meta">Message handoff</div>
       <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.2vw,9.2vh);line-height:.96;letter-spacing:-.025em">动作叫「发消息」</h2>
-      <p class="lead" style="color:rgba(255,255,255,.75);font-weight:300">私群只读 · 不在聊天目录</p>
+      <p class="lead" style="color:rgba(255,255,255,.75);font-weight:300">这次交接：用户只读 · 当时目录未显示该群</p>
     </div>
-    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:3vw;align-items:center;min-height:0">
-      <div style="display:flex;flex-direction:column;gap:0">
-        <div style="display:grid;grid-template-columns:auto 1fr;gap:1.6vw;align-items:start;padding:1.6vh 0;border-top:1px solid rgba(255,255,255,.18)">
-          <div style="font-family:var(--sans);font-weight:200;font-size:min(3vw,5.2vh);color:var(--accent)">01</div>
-          <div>
-            <div style="font-size:max(18px,1.3vw);font-weight:400">调度指挥 herdr</div>
-            <div class="t-body-sm" style="margin-top:.4vh;color:rgba(255,255,255,.7)">查资料 · 拆任务</div>
-          </div>
+    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:65% 35%;gap:1.6vw;min-height:0;margin:2.4vh 0 6.5vh">
+      <a href="images/11-goal-conflict-a.jpg" target="_blank" rel="noreferrer" style="display:grid;grid-template-columns:42% 1fr;gap:1.4vw;text-decoration:none;color:inherit;min-width:0;border-top:2px solid var(--accent);padding-top:1.2vh">
+        <div class="frame-img fit-contain" style="height:43vh;background:#fff"><img src="images/11-goal-conflict-a.jpg" data-image-slot="s15-matrix-original-goal" alt="调度请求既有背景并收到 8.7k 目标校正的原截图" /></div>
+        <div style="display:flex;flex-direction:column;gap:1vh">
+          <div class="t-meta" style="color:var(--accent-bright)">目标冲突被看见</div>
+          <div style="font-size:max(20px,1.7vw);font-weight:300;line-height:1.25">新任务与既有目标冲突<br/>→ 先确认</div>
+          <div class="t-body-sm" style="color:rgba(255,255,255,.72)">请求既有背景 → 发消息给幕僚长 → 回传 brief → 指出目标口径冲突</div>
+          <div class="t-meta" style="margin-top:auto;color:rgba(255,255,255,.58)">校正原图 A ↗<br/>完整后续见原图 B</div>
         </div>
-        <div style="display:grid;grid-template-columns:auto 1fr;gap:1.6vw;align-items:start;padding:1.6vh 0;border-top:1px solid rgba(255,255,255,.18)">
-          <div style="font-family:var(--sans);font-weight:200;font-size:min(3vw,5.2vh);color:var(--accent)">02</div>
-          <div>
-            <div style="font-size:max(18px,1.3vw);font-weight:400">发消息找幕僚长</div>
-            <div class="t-body-sm" style="margin-top:.4vh;color:rgba(255,255,255,.7)">背景交接 · 动作名固定</div>
-          </div>
+      </a>
+      <div style="display:grid;grid-template-rows:1fr 1fr auto;gap:1vh;min-height:0">
+        <a href="images/11-handoff-group.jpg" target="_blank" rel="noreferrer" style="display:grid;grid-template-columns:42% 1fr;gap:1vw;text-decoration:none;color:inherit;min-height:0">
+          <div class="frame-img fit-contain" style="height:19vh;background:#fff"><img src="images/11-handoff-group.jpg" data-image-slot="s15-matrix-original-handoff" alt="调度与幕僚长只读交接群原截图" /></div>
+          <div><div class="t-meta">交接群 ↗</div><p class="t-body-sm" style="color:rgba(255,255,255,.72);margin-top:.6vh">请求、回复与“只读”标识可见；底部正文并不完整。</p></div>
+        </a>
+        <a href="images/11-chat-dir.jpg" target="_blank" rel="noreferrer" style="display:grid;grid-template-columns:42% 1fr;gap:1vw;text-decoration:none;color:inherit;min-height:0">
+          <div class="frame-img fit-contain" style="height:19vh;background:#fff"><img src="images/11-chat-dir.jpg" data-image-slot="s15-matrix-original-directory" alt="当时聊天目录原截图" /></div>
+          <div><div class="t-meta">当时目录 ↗</div><p class="t-body-sm" style="color:rgba(255,255,255,.72);margin-top:.6vh">这张目录里未显示交接群。</p></div>
+        </a>
+        <div class="t-meta" style="display:flex;gap:1vw;flex-wrap:wrap;color:rgba(255,255,255,.58)">
+          <a href="images/11-goal-conflict-b.jpg" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:none">校正原图 B ↗</a>
+          <a href="https://x.com/YuLin807/status/2095147915744625112" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:none">9/2 交接帖 ↗</a>
         </div>
-        <div style="display:grid;grid-template-columns:auto 1fr;gap:1.6vw;align-items:start;padding:1.6vh 0;border-top:1px solid rgba(255,255,255,.18)">
-          <div style="font-family:var(--sans);font-weight:200;font-size:min(3vw,5.2vh);color:var(--accent)">03</div>
-          <div>
-            <div style="font-size:max(18px,1.3vw);font-weight:400">拉只读私群</div>
-            <div class="t-body-sm" style="margin-top:.4vh;color:rgba(255,255,255,.7)">两人完成交接</div>
-          </div>
-        </div>
-        <div style="display:grid;grid-template-columns:auto 1fr;gap:1.6vw;align-items:start;padding:1.6vh 0;border-top:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.18)">
-          <div style="font-family:var(--sans);font-weight:200;font-size:min(3vw,5.2vh);color:var(--accent)">04</div>
-          <div>
-            <div style="font-size:max(18px,1.3vw);font-weight:400">不进聊天目录</div>
-            <div class="t-body-sm" style="margin-top:.4vh;color:rgba(255,255,255,.7)">点进去才看见 · 不占用户注意力</div>
-          </div>
-        </div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2vw;align-items:start;min-height:0">
-        <figure class="tile" style="min-width:0">
-          <div class="frame-img pos-top" style="height:42vh;background:#fff">
-            <img src="images/11-handoff-group.jpg" data-image-slot="s14-evidence-vertical-a" alt="调度与幕僚长只读私群交接原截图" />
-          </div>
-          <figcaption class="swiss-img-caption" style="color:rgba(255,255,255,.58);border-color:rgba(255,255,255,.18);display:block"><strong style="color:#fff">Packed brief</strong><br/>只要事实与结论</figcaption>
-        </figure>
-        <figure class="tile" style="min-width:0">
-          <div class="frame-img pos-top" style="height:42vh;background:#fff">
-            <img src="images/11-chat-dir.jpg" data-image-slot="s14-evidence-vertical-b" alt="调度、幕僚长和 dr eggbot 聊天目录原截图" />
-          </div>
-          <figcaption class="swiss-img-caption" style="color:rgba(255,255,255,.58);border-color:rgba(255,255,255,.18);display:block"><strong style="color:#fff">目录证据</strong><br/>私群不在目录</figcaption>
-        </figure>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ 12 · takeaway-three · S10 ============ -->
-<section class="slide split" data-animate="split-statement" data-slide-id="takeaway-three" data-layout="S10">
+<section class="slide split" data-animate="split-statement" data-slide-id="takeaway-three" data-layout="SWISS-CLOSING-ASCII">
   <div class="canvas-card">
     <div class="split-half">
       <div class="half b-accent" style="padding:5.6vh 3.6vw 4.4vh;justify-content:space-between;position:relative;overflow:hidden">
@@ -1769,14 +1688,11 @@
         <div data-anim="manifesto" style="display:flex;flex-direction:column;gap:2vh;position:relative;z-index:1">
           <div class="t-meta" style="color:rgba(255,255,255,.78);letter-spacing:.22em;margin-bottom:1.6vh">同行笔记</div>
           <h2 style="font-family:var(--sans),var(--sans-zh);font-size:min(6.4vw,11.2vh);line-height:.94;letter-spacing:-.025em;font-weight:200;color:#fff">带走<br/><span style="font-style:italic;font-weight:300">三条</span></h2>
-          <div style="font-family:var(--sans),var(--sans-zh);font-size:max(16px,1vw);line-height:1.6;color:rgba(255,255,255,.82);font-weight:400;max-width:36ch;margin-top:1.4vh">带走三条 · anti-jobs / 幕僚长与调度分工 / 只读私群</div>
+          <div style="font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.05vw);line-height:1.6;color:rgba(255,255,255,.82);font-weight:400;max-width:28ch;margin-top:1.4vh">从职责、分工，到背景交接。</div>
         </div>
         <div data-anim="signature" style="display:grid;grid-template-columns:1fr auto;gap:2vw;align-items:end;border-top:1px solid rgba(255,255,255,.22);padding-top:2vh;position:relative;z-index:1">
-          <div>
-            <div class="t-meta" style="color:rgba(255,255,255,.8)">yulin807</div>
-            <div class="t-meta" style="color:rgba(255,255,255,.62);line-height:1.6;margin-top:.8vh">杭州市西湖区古天巷8号<br/>云州国际2号楼C座15楼</div>
-          </div>
-          <div class="t-meta" style="color:rgba(255,255,255,.62);text-align:right">10–15 MIN</div>
+          <div class="t-meta" style="color:rgba(255,255,255,.8);text-transform:none">yulin807</div>
+          <div class="t-meta" style="color:rgba(255,255,255,.62);text-align:right">Grok Bot 分享会</div>
         </div>
       </div>
       <div class="half" style="padding:5.6vh 3.6vw 4.4vh;justify-content:space-between">
@@ -1788,27 +1704,27 @@
           <div style="display:grid;grid-template-columns:auto 1fr;gap:1.5vw;align-items:start;padding:1.15vh 0;border-top:1px solid var(--border-subtle)">
             <div style="font-family:var(--sans);font-weight:200;font-size:min(3vw,5.3vh);line-height:.9;color:var(--text-primary)">01</div>
             <div>
-              <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(18px,1.35vw);line-height:1.2;letter-spacing:-.015em;color:var(--text-primary);margin-bottom:.45vh">一件事 · 一个声音 · 明确拒绝</h3>
-              <p class="t-body-sm">one job + anti-jobs，写进角色本身。</p>
+              <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(20px,1.55vw);line-height:1.2;letter-spacing:-.015em;color:var(--text-primary);margin-bottom:.45vh">职责写清楚</h3>
+              <p class="t-body-sm">一件事 · 一种口吻 · 明确不做什么</p>
             </div>
           </div>
           <div style="display:grid;grid-template-columns:auto 1fr;gap:1.5vw;align-items:start;padding:1.15vh 0;border-top:1px solid var(--border-subtle)">
             <div style="font-family:var(--sans);font-weight:200;font-size:min(3vw,5.3vh);line-height:.9;color:var(--text-primary)">02</div>
             <div>
-              <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(18px,1.35vw);line-height:1.2;letter-spacing:-.015em;color:var(--text-primary);margin-bottom:.45vh">先拆角色 · 再干活</h3>
-              <p class="t-body-sm">已有幕僚长就不克隆——拆出调度。</p>
+              <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(20px,1.55vw);line-height:1.2;letter-spacing:-.015em;color:var(--text-primary);margin-bottom:.45vh">先看已有角色</h3>
+              <p class="t-body-sm">保留幕僚长，拆出调度</p>
             </div>
           </div>
           <div style="display:grid;grid-template-columns:auto 1fr;gap:1.5vw;align-items:start;padding:1.15vh 0;border-top:1px solid var(--border-subtle);border-bottom:2px solid var(--accent)">
             <div style="font-family:var(--sans);font-weight:200;font-size:min(3vw,5.3vh);line-height:.9;color:var(--accent)">03</div>
             <div>
-              <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(18px,1.35vw);line-height:1.2;letter-spacing:-.015em;color:var(--accent);margin-bottom:.45vh">交接走发消息 · 不走主对话</h3>
-              <p class="t-body-sm">只读私群不在目录，不占用户注意力。</p>
+              <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(20px,1.55vw);line-height:1.2;letter-spacing:-.015em;color:var(--accent);margin-bottom:.45vh">背景通过消息交接</h3>
+              <p class="t-body-sm">遇到目标冲突，先确认</p>
             </div>
           </div>
         </div>
         <div data-anim="foot" style="display:grid;grid-template-columns:auto 1fr;gap:1.8vw;align-items:center;border-top:1px solid var(--border-subtle);padding-top:1.4vh">
-          <figure class="frame-img fit-contain" style="width:12vw;height:25vh;background:#fff">
+          <figure class="frame-img fit-contain" style="width:15vw;height:30vh;background:#fff">
             <img src="images/12-wechat-qr.jpg" data-image-slot="s10-contact-qr" alt="QingYue 微信二维码" />
           </figure>
           <div style="display:flex;flex-direction:column;gap:1.2vh">
@@ -1816,7 +1732,7 @@
             <div style="font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.45vw);font-weight:400;line-height:1.3">微信扫码</div>
             <div class="t-body-sm">QingYue</div>
             <a href="https://x.com/YuLin807" target="_blank" rel="noreferrer" style="font-family:var(--mono);font-size:max(14px,.86vw);font-weight:500;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:.35vh;width:max-content">x.com/YuLin807</a>
-            <div class="t-meta" style="line-height:1.45">署名 · yulin807</div>
+            <div class="t-meta" style="line-height:1.45;text-transform:none">署名 · yulin807</div>
           </div>
         </div>
       </div>
@@ -1837,169 +1753,157 @@ const SPEAKER_NOTES = [
     title: '蛋·bot 不是一句提示词',
     section: 'Hook',
     minutes: 0.5,
-    purpose: '定题；一条时间线，不是功能清单',
+    purpose: '先解释蛋·bot 是什么，并预告角色拆分与消息交接案例',
     talk: [
-      '署名：yulin807；场合：Grok Bot 分享会；计划时长 10–15 分钟',
-      '地点：杭州市西湖区古天巷8号，云州国际2号楼C座15楼',
-      '给看过三帖、想把 grok bot 当下一代 Agent 理解的人',
-      'Agent 产品经理：交接细节是给你们的',
-      '专有名词保留原文：dr eggbot、CreateAgent、anti-jobs、调度、幕僚长'
+      '我是 yulin807；这是一场 10–15 分钟的 Grok Bot 分享',
+      '蛋·bot 是一个帮你创建 Grok Bot 的 bot',
+      '这次它发现我已有幕僚长，于是另外拆出调度；今天看这个分工怎样发生、怎样交接'
     ],
-    transition: '先看三帖落在哪几天'
+    transition: '先用三帖给这次经历钉三个时间坐标'
   },
   {
     id: 'hook-timeline',
     title: '三帖一条线',
     section: 'Context',
-    minutes: 1.0,
-    purpose: '按时间讲；给后面每章钉日期',
+    minutes: 0.75,
+    purpose: '用三个日期建立环境、配置与交接的材料坐标',
     talk: [
-      'Yu 原话：grok 一把跳过 open claw / Hermes / Codex，来到下一代 Agent',
-      '讲稿改正笔误：geok→grok，herder→herdr，inter macmini→Intel Mac mini，moshi- hook→moshi-hook；引用原帖保持原样',
-      '引用链（口述即可）：交接帖 → 拆出调度 → 元·bot 首次加载 → @poteto Dr Eggbot 公开更新；介绍篇2️⃣ → 介绍篇 I',
-      '三帖无 grok.com 分享卡；附件是 Grok Bot 界面截图'
+      '8 月 28 日先讲云电脑环境：bot 能运行任务，人能接管',
+      '8 月 31 日转到角色配置：指令、memory、Skills 与插件',
+      '9 月 2 日出现具体交接：调度通过“发消息”向幕僚长取背景'
     ],
-    transition: '第一帖先讲这台电脑长什么样'
+    transition: '先看第一帖：这些 bot 实际运行在什么环境里'
   },
   {
     id: 'core-cloud-spec',
     title: '这是一台电脑',
     section: 'Core',
-    minutes: 1.0,
-    purpose: '规格必须上屏，建立「环境」而不是「聊天框」',
+    minutes: 0.75,
+    purpose: '建立“任务在电脑里运行、需要时可人工接管”的环境认知',
     talk: [
-      '有免费额度，也可用 X 会员登录',
-      '类比：2018 年 Intel Mac mini，或 iPhone 16e',
-      '登录态所有 Bot 共用（幕僚长亲口）',
-      '当时 SSH/mosh 打不进来（没 sshd）'
+      '8 核 Xeon、16G 内存、约 120G 盘、Debian 图形环境，都是 8 月 28 日使用记录里的历史实例',
+      '关键不是把它类比成哪台消费设备，而是任务在电脑环境里运行，人可以接管图形界面',
+      '材料还提过额度、X 登录和共享登录态，但适用范围与当前行为未确认，不把它们讲成产品保证'
     ],
-    transition: 'Yu 已经在这台上玩了四套'
+    transition: '这台环境能做什么？我当时主要用了四种方式'
   },
   {
     id: 'core-playbook',
-    title: '四套玩法',
+    title: '四种用法',
     section: 'Core',
-    minutes: 1.5,
-    purpose: '证明「可接管电脑」已被 Yu 用实',
+    minutes: 1.0,
+    purpose: '快速交代使用方式，并只突出后文需要的 herdr',
     talk: [
-      '点名 @odd_joel；致谢 @poteto',
-      '没公网走 Tailscale；不要开 Tailscale SSH',
-      'herdr：共享机上跑 Grok/Codex 走 pane，不用 grok -p',
-      '幕僚长补充：无独显、登录态共用；moshi-hook 具体版本未由分享者确认'
+      '四项是并列用法，不是一套必须按顺序完成的教程',
+      '这里重点只讲 herdr：它把工作分到不同终端窗格，也就是 pane',
+      'Moshi 与 Tailscale 的具体操作来自当时使用路径；当前适用条件和准确版本未确认'
     ],
-    transition: '环境有了——第二帖讲 bot 本身由什么组成'
+    transition: '环境和工具有了，接下来要定义谁负责哪件事'
   },
   {
     id: 'core-four-stack',
-    title: '一个 bot 四件套',
+    title: '配置分四类',
     section: 'Core',
     minutes: 1.0,
-    purpose: '把零散概念串成可导入配置',
+    purpose: '给本次公开材料建立四类配置框架，同时限定导入边界',
     talk: [
-      'Yu：「你只是需要导入，『偷走』别人 bot 的配置就可以了」',
-      '新手开箱即用才是路线',
-      '插件可能绑定 grok bot 生态，粘性高',
-      '彩蛋一句即可：「照猫画虎做 pi bot」——不当正题'
+      '这份案例里可以把公开材料整理成四类：指令、memory、Skills、插件',
+      '这是工作解释，不是 Grok Bot 的完整产品机制或导入规范',
+      '首次导入截图还显示三个 Skills 当时不能保存，所以“导入”不能等同于整套配置必然复制成功'
     ],
-    transition: '推文里的「指令」是中文意译——下一页放英文原句'
+    transition: '下面看公开 description 里，它如何规定一个角色'
   },
   {
     id: 'core-eggbot-desc',
-    title: '公开可恢复的 description',
+    title: '先定义角色',
     section: 'Core',
-    minutes: 1.5,
-    purpose: '公开可恢复配置上屏；原截图与英文原句互相校对',
+    minutes: 1.25,
+    purpose: '从公开 description 提炼 one job、one voice 与 explicit anti-jobs',
     talk: [
-      'Yu 中文对照可并排（介绍篇2️⃣ §1 全文）',
-      '@poteto：「dr eggbot makes grok bot bots / tinkabot makes grok bot plugins」',
-      '侧栏徽章：bot designer；图标：红圆（蛋）',
-      '原生「指令」行未点开：是否另有更长 system prompt，目前未知',
-      'Memories 英文原件与准确版本号未确认；点点图标注「内容由 AI 生成」——不是原件'
+      '公开简介写的是：先问少量偏好，再用 CreateAgent 创建 bot',
+      '角色原则可以归成三句：一件事、一种口吻、明确不做什么',
+      '这里只能确认公开名片 description；未展开的指令项、Memories、Skills 正文与准确安装版本都未确认'
     ],
-    transition: '人设之下是三个 skill 和一个插件'
+    transition: '这段简介之外，截图里还能看到三个 Skills 和一个插件'
   },
   {
     id: 'core-skills-pstack',
-    title: '三个 skill · 一个插件',
+    title: '三个 Skills · 一个插件',
     section: 'Core',
-    minutes: 1.0,
-    purpose: '原句上屏；承认截断',
+    minutes: 0.85,
+    purpose: '确认截图可见名称与部分简介，并保持完整配置未知的边界',
     talk: [
-      'Yu 对 pstack 的翻译：先拆清楚、设计清楚，再写代码；少废代码、可放心并行',
-      '市场页 Show more 可口述要点（勿当教程）：anti-jobs 例 mentions scout 不发帖、drafter 不发送；Make Bot UI 用 secret-request 绝不进 chat',
-      '公开模板填完整 live profile.description；Poteto Mode 原则名 Laziness / Subtract Before Add / Experience First / Prove It Works——只列名不展开',
-      '截断处不补全；完整 SKILL.md 尚未取得，页面明确标为未确认'
+      '完整截图能确认三个名称：design-grok-bot、Make Bot UI、Cheap routines',
+      'pstack 是另一个编码工作流插件，不是“第四个 Skill”',
+      '名称与可见简介不等于完整配置，也不能证明当前实例已经安装成功；被截断的正文不补写'
     ],
-    transition: '导入后第一件事不是聊，是装齐'
+    transition: '知道有哪些配置后，再看首次导入时它怎样引导我补齐'
   },
   {
     id: 'core-first-import',
-    title: '拿到就先装齐',
+    title: '首次配置，有指引',
     section: 'Core',
-    minutes: 1.0,
-    purpose: 'Yu 说的「细节之处」——有指引，不是空壳',
+    minutes: 0.85,
+    purpose: '准确呈现首次配置中已完成、受阻与下一步指引',
     talk: [
-      'Yu：「首先他会让 bot 加载插件，书写记忆，形成 skill」',
-      '有真实仓库且没有 verify-* 才跑 /create-verification-skill；空机跳过',
-      'update_state 补 transcript-healthcheck（工作日 8:44 PT）与 routine-healthcheck（周一 8:49 PT）；没事就安静；用户没点名，不要根据报告去创建',
-      '@poteto 2026-09-02 的公开更新提到例行 health check + 可自定义摩擦扫描；准确版本号未确认',
-      '更新：重装；新 eggbot 从旧的拷记忆，再删旧的'
+      '首次配置给出了明确顺序：先检查插件、记忆与 Skills',
+      '回执显示记忆已写入，但三个 Skills 当时不能保存；缺少时要到 App 补加',
+      '随后安装 pstack，回报中写着 45 个 skills；这和前面的三个 bot Skills 不是同一组',
+      '/setup-pstack 这里做的是模型规则选择；当时选择继承父会话模型，不把它写成默认推荐'
     ],
-    transition: '装好后，Yu 第一个用途是让它造 bot'
+    transition: '这些配置动作之后，我让它创建一个分派工作的角色'
   },
   {
     id: 'core-spawn-diaodu',
-    title: '已有幕僚长',
+    title: '保留幕僚长，拆出调度',
     section: 'Core',
-    minutes: 1.0,
-    purpose: '展示 CreateAgent 前的角色拆分，不是盲目新建',
+    minutes: 1.15,
+    purpose: '展示创建前先检查已有角色，再拆分单一职责',
     talk: [
-      'Yu 原话：🥚bot 识别出来已有幕僚长，没有动统筹，把调度拆成新 bot',
-      'eggbot 英文原句（小写）：one job is already clear: a coordinator over your grok bots, using herdr, so work fans out instead of burning one chat.',
-      'you already have 幕僚长 for “manage the other bots.” this new one would be the herdr-backed dispatcher, not a second chief of staff.',
-      'picking 调度. on-demand only. it routes, it does not do the work. 幕僚长 keeps decisions that need you.'
+      '我的需求是找一个角色分派工作',
+      '蛋·bot 先检查已有角色，发现幕僚长已经承担统筹，所以没有复制第二个参谋',
+      '它另外创建“调度”：按需唤醒，通过 herdr 派活；需要我拍板的事情仍留给幕僚长'
     ],
-    transition: '下一页写清调度做什么、不做什么'
+    transition: '角色拆出来还不够，还要写清它负责什么、哪些事交给别人'
   },
   {
     id: 'core-diaodu-jobs',
-    title: '路由，不干活',
+    title: '调度负责派活',
     section: 'Core',
-    minutes: 1.0,
-    purpose: '产品经理要带走的「明确拒绝」模板；与 eggbot 自身 anti-jobs 分开',
+    minutes: 1.25,
+    purpose: '用 one job 与 anti-jobs 明确调度的职责边界',
     talk: [
-      'eggbot 自身 anti-jobs（对照口述，勿安到调度头上）：不默认出可分享模板；healthcheck 报告未经用户点名不创建',
-      '它写给其他 bot 的例子：mentions scout 不发帖；drafter 不发送；没事就闭嘴',
-      '不喜欢就侧边栏右键删除',
-      '调度 one job：拆 · 等 · 合并 · 报告一次'
+      '调度接到工作后负责拆分、等待、合并，最后报告一次',
+      '代码、调研与设计交给对应角色；创建新 bot 仍由 eggbot 负责',
+      '需要用户决定的事不抢幕僚长；没有任务时保持安静是角色要求，不是已经验证的零打扰保证'
     ],
-    transition: '调度怎么跟幕僚长交接？'
+    transition: '工作分出去了，但背景还在幕僚长那里；调度怎么拿到它'
   },
   {
     id: 'shift-handoff',
     title: '动作叫「发消息」',
     section: 'Shift',
-    minutes: 1.5,
-    purpose: '交接细节是本帖核心；具体，不抽象成「多 Agent 协作」',
+    minutes: 1.85,
+    purpose: '展示消息交接如何带回既有背景，并暴露目标口径冲突',
     talk: [
-      '引用原帖笔误保持：geok bot、herder；讲稿可说 grok / herdr',
-      '调度要 5 项 packed brief：人设与目标、已讨论对标、涨粉 vs 变现、已排除/约束/偏好、还缺什么；只要事实和结论，不要再调研',
-      '幕僚长校正：锁定的不是百万粉，是 8.7k 垂直粉先验证「小受众、高信任、高客单」；百万粉是调度这次拆任务新口径，要先跟 Yu 确认',
-      '对标两张表不要混：33 个学机制，35 人是关系队列；语料在共享机 /workspace/creator-research/；点名 @zkyo'
+      '背景已经在幕僚长那里，所以调度请求的是五类既有事实与结论，不让它重新调研',
+      '动作顺序是请求背景、发消息、回传 brief，再把目标口径冲突指出来',
+      '记录里，新任务提到百万粉；幕僚长回传的是先用 8.7k 垂直受众验证“小受众、高信任、高客单”。这是冲突提示，不是最终目标结论',
+      '用户可以查看这次只读交接；当时目录截图未显示该群，但这不证明所有交接都不会出现在目录里'
     ],
-    transition: '带走三条'
+    transition: '这次最值得带走的，是分工写清楚、背景能交接，口径冲突也能被看见'
   },
   {
     id: 'takeaway-three',
     title: '带走三条',
     section: 'Takeaway',
-    minutes: 1.0,
-    purpose: '可记忆收束；不展望产品路线',
+    minutes: 0.8,
+    purpose: '用三个可复用动作收束，并给听众一个马上可做的练习',
     talk: [
-      '对应：带走三条 · anti-jobs / 幕僚长与调度分工 / 只读私群',
-      '可选彩蛋：Yu「照猫画虎做 pi bot」——一句带过',
-      '公开材料来源：推文原截图、市场页 dr-eggbot-v2、@poteto 公开更新；点点 Memories 图 = AI 生成中文摘要，不是原件',
-      '结尾联系方式：微信二维码 QingYue；X 链接 x.com/YuLin807；署名固定为 yulin807'
+      '第一，职责写清楚：一件事、一种口吻、明确不做什么',
+      '第二，创建前先看已有角色：这次保留幕僚长，拆出调度',
+      '第三，背景通过消息交接；如果新任务和既有目标冲突，就先确认',
+      '回去选一个 bot，写下一件它负责的事、一件它不做的事，以及它向谁要背景；讲完留屏扫码'
     ],
     transition: '结束'
   }
