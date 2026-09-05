@@ -549,6 +549,10 @@
   #nav .dot.active{background:var(--accent);width:18px}
   body.dark-bg #nav .dot{background:rgba(255,255,255,.32)}
   body.dark-bg #nav .dot.active{background:var(--accent)}
+  /* P10 等浅色页底部是深色通栏：只改 hint/nav 对比度，不把整页标成 dark */
+  body.nav-on-ink #nav .dot{background:rgba(255,255,255,.42)}
+  body.nav-on-ink #nav .dot.active{background:var(--accent)}
+  body.nav-on-ink #nav .dot:hover{background:rgba(255,255,255,.7)}
 
   #hint{position:fixed;bottom:2.4vh;right:2.5vw;z-index:30;display:flex;align-items:center;gap:.65em;font-family:var(--mono);font-size:14px;letter-spacing:.14em;text-transform:uppercase;opacity:.4}
   #hint button{all:unset;display:inline-flex;align-items:center;gap:.42em;cursor:pointer;color:inherit;white-space:nowrap}
@@ -556,8 +560,10 @@
   #hint .ppt-key{padding:.12em .34em;border:1px solid currentColor;letter-spacing:.06em}
   #hint .ppt-sep{opacity:.55}
   body.dark-bg #hint{color:var(--paper);opacity:.4}
+  body.nav-on-ink #hint{color:var(--paper);opacity:.72;text-shadow:0 1px 0 rgba(0,0,0,.35)}
   body.low-power #hint{color:var(--accent);opacity:.72}
   body.dark-bg.low-power #hint{color:var(--paper);opacity:.72}
+  body.nav-on-ink.low-power #hint{color:var(--accent);opacity:.88;text-shadow:none}
 
   /* ============ 演讲者模式 ============ */
   body.ppt-audience #hint,body.ppt-audience #nav,
@@ -1424,7 +1430,7 @@
       </article>
     </div>
     <div data-anim="foot" style="display:flex;justify-content:space-between;gap:2vw;border-top:1px solid rgba(255,255,255,.18);padding-top:1.6vh;margin:2vh 0 6.5vh">
-      <div class="t-body-sm" style="color:rgba(255,255,255,.78)">P08 的首次导入记录显示：三个 Skills 当时需在 App 补加。</div>
+      <div class="t-body-sm" style="color:rgba(255,255,255,.78)">首次导入时未能保存三个 Skills；缺少时需在 App 补加。后续补加结果未确认。</div>
       <a href="https://x.com/YuLin807/status/2094440320180371616" target="_blank" rel="noreferrer" class="t-meta" style="color:rgba(255,255,255,.62);text-decoration:none;white-space:nowrap">8/31 原帖 ↗</a>
     </div>
   </div>
@@ -1460,7 +1466,7 @@
             <div class="frame-img fit-contain" style="height:50vh;background:#fff">
               <img src="images/06-eggbot-card.jpg" data-image-slot="s03-evidence-vertical" alt="推文中的 dr eggbot 详情页原截图" />
             </div>
-            <figcaption class="swiss-img-caption" style="display:block"><strong>dr eggbot</strong><br/>原截图 · fit-contain</figcaption>
+            <figcaption class="swiss-img-caption" style="display:block"><strong>dr eggbot</strong><br/>公开名片原截图</figcaption>
           </figure>
           <div style="display:flex;flex-direction:column;gap:1.4vh">
             <div class="t-meta accent">公开名片 description</div>
@@ -1486,27 +1492,35 @@
       <div class="t-meta">Three Skills · One Plugin</div>
       <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.2vw,9.2vh);line-height:.96;letter-spacing:-.025em">三个 Skills · 一个插件</h2>
     </div>
-    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,minmax(0,1fr));gap:1.4vh 1.2vw;min-height:0;margin:3vh 0 6.5vh">
-      <article class="card-fill" style="padding:1.8vh 1.2vw;display:flex;flex-direction:column;gap:.8vh">
-        <div class="t-meta" style="color:var(--text-helper)">01 · SKILL</div><h3 style="font-size:max(18px,1.35vw);font-weight:400">design-grok-bot</h3><p class="t-body-sm" style="margin-top:auto;color:var(--text-secondary)">设计 bot · 简介概括</p>
+    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto minmax(0,1fr);gap:1.4vh 1.2vw;min-height:0;margin:3vh 0 6.5vh">
+      <article class="card-fill" style="padding:1.4vh 1.2vw;display:flex;flex-direction:column;gap:.6vh">
+        <div class="t-meta" style="color:var(--text-helper)">01 · SKILL</div><h3 style="font-size:max(18px,1.35vw);font-weight:400">design-grok-bot</h3><p class="t-body-sm" style="color:var(--text-secondary)">设计 bot · 简介概括</p>
       </article>
-      <article class="card-fill" style="padding:1.8vh 1.2vw;display:flex;flex-direction:column;gap:.8vh">
-        <div class="t-meta" style="color:var(--text-helper)">02 · SKILL</div><h3 style="font-size:max(18px,1.35vw);font-weight:400">Make Bot UI</h3><p class="t-body-sm" style="margin-top:auto;color:var(--text-secondary)">制作 UI · 简介概括</p>
+      <article class="card-fill" style="padding:1.4vh 1.2vw;display:flex;flex-direction:column;gap:.6vh">
+        <div class="t-meta" style="color:var(--text-helper)">02 · SKILL</div><h3 style="font-size:max(18px,1.35vw);font-weight:400">Make Bot UI</h3><p class="t-body-sm" style="color:var(--text-secondary)">制作 UI · 简介概括</p>
       </article>
-      <a href="images/07-skills.jpg" target="_blank" rel="noreferrer" class="card-fill" style="padding:1.2vh;display:grid;grid-template-columns:42% 1fr;gap:1vw;text-decoration:none;color:var(--ink);min-width:0">
-        <div class="frame-img fit-contain" style="height:20vh;background:#fff"><img src="images/07-skills.jpg" data-image-slot="s16-brief-original-skills" alt="完整的三个 Skills 列表原截图" /></div>
-        <div style="display:flex;flex-direction:column;gap:.8vh"><div class="t-meta" style="color:var(--text-helper)">原截图 ↗</div><p class="t-body-sm" style="color:var(--text-secondary)">完整保留三项；包含 Cheap routines。</p></div>
-      </a>
-      <article class="card-fill" style="padding:1.8vh 1.2vw;display:flex;flex-direction:column;gap:.8vh">
-        <div class="t-meta" style="color:var(--text-helper)">03 · SKILL</div><h3 style="font-size:max(18px,1.35vw);font-weight:400">Cheap routines</h3><p class="t-body-sm" style="margin-top:auto;color:var(--text-secondary)">例行任务 · 简介概括</p>
+      <article class="card-fill" style="padding:1.4vh 1.2vw;display:flex;flex-direction:column;gap:.6vh">
+        <div class="t-meta" style="color:var(--text-helper)">03 · SKILL</div><h3 style="font-size:max(18px,1.35vw);font-weight:400">Cheap routines</h3><p class="t-body-sm" style="color:var(--text-secondary)">例行任务 · 简介概括</p>
       </article>
-      <article class="card-accent" style="padding:1.8vh 1.2vw;display:flex;flex-direction:column;gap:.8vh">
-        <div class="t-meta">PLUGIN · PSTACK</div><h3 style="font-size:max(18px,1.35vw);font-weight:400">编码工作流插件</h3><p class="t-body-sm" style="margin-top:auto;color:var(--accent-on)">不是“第四个 Skill”</p>
-      </article>
-      <a href="images/07-pstack.jpg" target="_blank" rel="noreferrer" class="card-fill" style="padding:1.2vh;display:grid;grid-template-columns:42% 1fr;gap:1vw;text-decoration:none;color:var(--ink);min-width:0">
-        <div class="frame-img fit-contain" style="height:20vh;background:#fff"><img src="images/07-pstack.jpg" data-image-slot="s16-brief-original-pstack" alt="pstack 插件原截图" /></div>
-        <div style="display:flex;flex-direction:column;gap:.8vh"><div class="t-meta" style="color:var(--text-helper)">原截图 ↗</div><p class="t-body-sm" style="color:var(--text-secondary)">名称与简介可见；效果主张未独立验证。</p></div>
-      </a>
+      <figure style="grid-column:1 / span 2;min-width:0;display:flex;flex-direction:column;gap:.8vh">
+        <div class="frame-img fit-contain" style="height:32vh;background:#fff">
+          <img src="images/07-skills-detail.jpg" data-image-slot="s16-brief-original-skills-crop" alt="原图局部：三个 Skills 名称与可见简介，省略号未补写" />
+        </div>
+        <figcaption class="swiss-img-caption" style="display:block;color:rgba(255,255,255,.72)">原图局部 · 三项名称与可见简介（省略号未补写） · <a href="images/07-skills.jpg" target="_blank" rel="noreferrer" style="color:inherit">完整原图 ↗</a></figcaption>
+      </figure>
+      <div style="display:flex;flex-direction:column;gap:1vh;min-width:0">
+        <article class="card-accent" style="padding:1.4vh 1.2vw;display:flex;flex-direction:column;gap:.6vh">
+          <div class="t-meta">PLUGIN · PSTACK</div><h3 style="font-size:max(18px,1.35vw);font-weight:400">编码工作流插件</h3><p class="t-body-sm" style="color:var(--accent-on)">不是“第四个 Skill”</p>
+        </article>
+        <a href="images/07-skills.jpg" target="_blank" rel="noreferrer" style="display:grid;grid-template-columns:38% 1fr;gap:.8vw;text-decoration:none;color:inherit;min-width:0">
+          <div class="frame-img fit-contain" style="height:11vh;background:#fff"><img src="images/07-skills.jpg" data-image-slot="s16-brief-original-skills" alt="三个 Skills 完整原截图" /></div>
+          <div><div class="t-meta" style="color:rgba(255,255,255,.7)">完整原图 ↗</div><p class="t-body-sm" style="color:rgba(255,255,255,.7);margin-top:.4vh">整张手机图，contain</p></div>
+        </a>
+        <a href="images/07-pstack.jpg" target="_blank" rel="noreferrer" style="display:grid;grid-template-columns:38% 1fr;gap:.8vw;text-decoration:none;color:inherit;min-width:0">
+          <div class="frame-img fit-contain" style="height:11vh;background:#fff"><img src="images/07-pstack.jpg" data-image-slot="s16-brief-original-pstack" alt="pstack 插件完整原截图" /></div>
+          <div><div class="t-meta" style="color:rgba(255,255,255,.7)">pstack 原图 ↗</div><p class="t-body-sm" style="color:rgba(255,255,255,.7);margin-top:.4vh">效果主张未独立验证</p></div>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -1608,7 +1622,7 @@
 </section>
 
 <!-- ============ 10 · core-diaodu-jobs · S12 ============ -->
-<section class="slide hero light" data-animate="manifesto" data-slide-id="core-diaodu-jobs" data-layout="S12">
+<section class="slide hero light" data-animate="manifesto" data-slide-id="core-diaodu-jobs" data-layout="S12" data-nav-on="ink">
   <div class="canvas-card">
     <div class="chrome-min">
       <div class="l">按需唤醒 · 短中文</div>
@@ -1647,29 +1661,36 @@
       <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.2vw,9.2vh);line-height:.96;letter-spacing:-.025em">动作叫「发消息」</h2>
       <p class="lead" style="color:rgba(255,255,255,.75);font-weight:300">这次交接：用户只读 · 当时目录未显示该群</p>
     </div>
-    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:65% 35%;gap:1.6vw;min-height:0;margin:2.4vh 0 6.5vh">
-      <a href="images/11-goal-conflict-a.jpg" target="_blank" rel="noreferrer" style="display:grid;grid-template-columns:42% 1fr;gap:1.4vw;text-decoration:none;color:inherit;min-width:0;border-top:2px solid var(--accent);padding-top:1.2vh">
-        <div class="frame-img fit-contain" style="height:43vh;background:#fff"><img src="images/11-goal-conflict-a.jpg" data-image-slot="s15-matrix-original-goal" alt="调度请求既有背景并收到 8.7k 目标校正的原截图" /></div>
-        <div style="display:flex;flex-direction:column;gap:1vh">
-          <div class="t-meta" style="color:var(--accent-bright)">目标冲突被看见</div>
-          <div style="font-size:max(20px,1.7vw);font-weight:300;line-height:1.25">新任务与既有目标冲突<br/>→ 先确认</div>
-          <div class="t-body-sm" style="color:rgba(255,255,255,.72)">请求既有背景 → 发消息给幕僚长 → 回传 brief → 指出目标口径冲突</div>
-          <div class="t-meta" style="margin-top:auto;color:rgba(255,255,255,.58)">校正原图 A ↗<br/>完整后续见原图 B</div>
+    <div data-anim="up" style="flex:1;display:grid;grid-template-columns:58% 42%;gap:1.6vw;min-height:0;margin:2.4vh 0 6.5vh">
+      <div style="display:flex;flex-direction:column;gap:1vh;min-width:0;border-top:2px solid var(--accent);padding-top:1.2vh">
+        <div class="t-meta" style="color:var(--accent-bright)">原图局部 · 发消息与目标校正</div>
+        <div style="font-size:max(20px,1.7vw);font-weight:300;line-height:1.25">新任务与既有目标冲突 → 先确认</div>
+        <div class="frame-img fit-contain" style="height:34vh;background:#fff">
+          <img src="images/11-send-correct-detail.jpg" data-image-slot="s15-matrix-original-goal-crop" alt="原图局部：发消息给幕僚长，以及 8.7k 目标校正" />
         </div>
-      </a>
-      <div style="display:grid;grid-template-rows:1fr 1fr auto;gap:1vh;min-height:0">
-        <a href="images/11-handoff-group.jpg" target="_blank" rel="noreferrer" style="display:grid;grid-template-columns:42% 1fr;gap:1vw;text-decoration:none;color:inherit;min-height:0">
-          <div class="frame-img fit-contain" style="height:19vh;background:#fff"><img src="images/11-handoff-group.jpg" data-image-slot="s15-matrix-original-handoff" alt="调度与幕僚长只读交接群原截图" /></div>
-          <div><div class="t-meta">交接群 ↗</div><p class="t-body-sm" style="color:rgba(255,255,255,.72);margin-top:.6vh">请求、回复与“只读”标识可见；底部正文并不完整。</p></div>
+        <p class="t-body-sm" style="color:rgba(255,255,255,.72)">请求既有背景 → 发消息给幕僚长 → 回传 brief → 指出目标口径冲突</p>
+        <a href="images/11-goal-conflict-a.jpg" target="_blank" rel="noreferrer" style="display:grid;grid-template-columns:22% 1fr;gap:.8vw;align-items:center;text-decoration:none;color:inherit;min-width:0">
+          <div class="frame-img fit-contain" style="height:8vh;background:#fff"><img src="images/11-goal-conflict-a.jpg" data-image-slot="s15-matrix-original-goal" alt="调度与幕僚长对话完整原截图 A" /></div>
+          <div class="t-meta" style="color:rgba(255,255,255,.58)">完整原图 A ↗ · contain<br/><span style="font-weight:400">另见幕僚长回复：<a href="images/11-goal-conflict-b.jpg" target="_blank" rel="noreferrer" style="color:inherit">原图 B ↗</a></span></div>
         </a>
-        <a href="images/11-chat-dir.jpg" target="_blank" rel="noreferrer" style="display:grid;grid-template-columns:42% 1fr;gap:1vw;text-decoration:none;color:inherit;min-height:0">
-          <div class="frame-img fit-contain" style="height:19vh;background:#fff"><img src="images/11-chat-dir.jpg" data-image-slot="s15-matrix-original-directory" alt="当时聊天目录原截图" /></div>
-          <div><div class="t-meta">当时目录 ↗</div><p class="t-body-sm" style="color:rgba(255,255,255,.72);margin-top:.6vh">这张目录里未显示交接群。</p></div>
+      </div>
+      <div style="display:grid;grid-template-rows:auto auto auto;gap:1vh;min-height:0">
+        <figure style="min-width:0">
+          <div class="t-meta" style="margin-bottom:.5vh">原图局部 · 可见「只读」</div>
+          <div class="frame-img fit-contain" style="height:16vh;background:#fff">
+            <img src="images/11-readonly-detail.jpg" data-image-slot="s15-matrix-original-handoff-crop" alt="原图局部：交接群底部可见的只读标识；底部正文仍不完整" />
+          </div>
+          <figcaption class="swiss-img-caption" style="display:block;color:rgba(255,255,255,.68)">底部正文仍不完整，不补画</figcaption>
+        </figure>
+        <a href="images/11-handoff-group.jpg" target="_blank" rel="noreferrer" style="display:grid;grid-template-columns:40% 1fr;gap:.8vw;text-decoration:none;color:inherit;min-width:0">
+          <div class="frame-img fit-contain" style="height:10vh;background:#fff"><img src="images/11-handoff-group.jpg" data-image-slot="s15-matrix-original-handoff" alt="调度与幕僚长只读交接群完整原截图" /></div>
+          <div><div class="t-meta">完整交接群 ↗</div><p class="t-body-sm" style="color:rgba(255,255,255,.72);margin-top:.4vh">contain · 整张原图</p></div>
         </a>
-        <div class="t-meta" style="display:flex;gap:1vw;flex-wrap:wrap;color:rgba(255,255,255,.58)">
-          <a href="images/11-goal-conflict-b.jpg" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:none">校正原图 B ↗</a>
-          <a href="https://x.com/YuLin807/status/2095147915744625112" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:none">9/2 交接帖 ↗</a>
-        </div>
+        <a href="images/11-chat-dir.jpg" target="_blank" rel="noreferrer" style="display:grid;grid-template-columns:40% 1fr;gap:.8vw;text-decoration:none;color:inherit;min-width:0">
+          <div class="frame-img fit-contain" style="height:10vh;background:#fff"><img src="images/11-chat-dir.jpg" data-image-slot="s15-matrix-original-directory" alt="当时聊天目录原截图" /></div>
+          <div><div class="t-meta">当时目录 ↗</div><p class="t-body-sm" style="color:rgba(255,255,255,.72);margin-top:.4vh">这张目录里未显示交接群</p></div>
+        </a>
+        <a href="https://x.com/YuLin807/status/2095147915744625112" target="_blank" rel="noreferrer" class="t-meta" style="color:rgba(255,255,255,.58);text-decoration:none">9/2 交接帖 ↗</a>
       </div>
     </div>
   </div>
@@ -1809,7 +1830,7 @@ const SPEAKER_NOTES = [
     talk: [
       '这份案例里可以把公开材料整理成四类：指令、memory、Skills、插件',
       '这是工作解释，不是 Grok Bot 的完整产品机制或导入规范',
-      '首次导入截图还显示三个 Skills 当时不能保存，所以“导入”不能等同于整套配置必然复制成功'
+      '首次导入时未能保存三个 Skills；缺少时需在 App 补加。后续补加结果未确认，所以“导入”不能等同于整套配置必然复制成功'
     ],
     transition: '下面看公开 description 里，它如何规定一个角色'
   },
@@ -1877,7 +1898,7 @@ const SPEAKER_NOTES = [
       '代码、调研与设计交给对应角色；创建新 bot 仍由 eggbot 负责',
       '需要用户决定的事不抢幕僚长；没有任务时保持安静是角色要求，不是已经验证的零打扰保证'
     ],
-    transition: '工作分出去了，但背景还在幕僚长那里；调度怎么拿到它'
+    transition: '职责分好了，背景还在幕僚长那里；调度怎么拿到它'
   },
   {
     id: 'shift-handoff',
@@ -1886,7 +1907,7 @@ const SPEAKER_NOTES = [
     minutes: 1.85,
     purpose: '展示消息交接如何带回既有背景，并暴露目标口径冲突',
     talk: [
-      '背景已经在幕僚长那里，所以调度请求的是五类既有事实与结论，不让它重新调研',
+      '背景已经在幕僚长那里，所以调度请求的是五类既有事实与结论（人设与目标、已讨论对标、涨粉与变现、约束偏好、还缺什么），不让它重新调研',
       '动作顺序是请求背景、发消息、回传 brief，再把目标口径冲突指出来',
       '记录里，新任务提到百万粉；幕僚长回传的是先用 8.7k 垂直受众验证“小受众、高信任、高客单”。这是冲突提示，不是最终目标结论',
       '用户可以查看这次只读交接；当时目录截图未显示该群，但这不证明所有交接都不会出现在目录里'
@@ -2082,7 +2103,9 @@ function go(n,opts={}){
   nav.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===idx));
   const el=slides[idx];
   const isDark = el.classList.contains('dark') || el.classList.contains('accent');
+  const navOnInk = isDark || el.getAttribute('data-nav-on') === 'ink';
   document.body.classList.toggle('dark-bg', isDark);
+  document.body.classList.toggle('nav-on-ink', navOnInk);
   darkMode = isDark;
   if(window.__playSlide) setTimeout(()=>window.__playSlide(idx), 450);
   window.__pptPresenter?.onSlideChange(idx);
