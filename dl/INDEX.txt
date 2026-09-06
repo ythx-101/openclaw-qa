@@ -1,0 +1,8 @@
+tailcat v0.6.0 linux arm64 (mirrored for Asahi / aarch64)
+
+Files:
+  tailcat_0.6.0_linux_arm64.tar.gz
+  tailcat-linux-arm64          (extracted binary)
+  tailcat_0.6.0_checksums.txt
+
+Upstream: https://github.com/tailscale/tailcat/releases/tag/v0.6.0
